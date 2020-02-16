@@ -10,6 +10,39 @@
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
+/* CUSTOM     */
+/**************/
+
+.contact-input, .contact-textarea {
+  width: 100%;
+  padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+.contact-textarea {
+  height: 12em;
+}
+
+.contact-label {
+  font-weight: bold;
+  line-height: 50px
+}
+
+.contact-submit {
+width: 100px;
+height: 50px;
+border-radius: 4px;
+font-size: 18px;
+margin-top: 30px;
+font-weight: bold;
+border: 1px solid #ccc;
+}
+
+/**************/
 /* BASE RULES */
 /**************/
 
@@ -148,7 +181,6 @@ table tr td :last-child {
   border-radius: 4px;
   box-sizing: border-box;
   font-size: 18px;
-  background-color: #fff3ff;
 }
 
 .share-box {
@@ -290,7 +322,7 @@ p > img {
   }
 
   img {
-    border-radius: 5px;
+    border-radius: 100%;
   }
 }
 

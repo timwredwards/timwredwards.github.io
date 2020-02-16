@@ -1,0 +1,492 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cook",
+				"cookies"
+			],
+			[
+				"cookie",
+				"cookieFilter"
+			],
+			[
+				"print",
+				"printCookie"
+			],
+			[
+				"file",
+				"fileStream"
+			],
+			[
+				"download",
+				"downloadStuff"
+			],
+			[
+				"fetch",
+				"fetchData"
+			],
+			[
+				"JQ",
+				"JQ_PATH"
+			],
+			[
+				"BUI",
+				"BUILD_STATUS"
+			],
+			[
+				"upda",
+				"updateKit"
+			],
+			[
+				"open",
+				"openPasswordWindow"
+			],
+			[
+				"win",
+				"windows"
+			],
+			[
+				"l",
+				"lastpass"
+			],
+			[
+				"valida",
+				"validateDates"
+			],
+			[
+				"vali",
+				"validateState"
+			],
+			[
+				"valid",
+				"validateUrl"
+			],
+			[
+				"bot",
+				"bottom"
+			],
+			[
+				"bottom",
+				"bottom"
+			],
+			[
+				"botom",
+				"bottomLeft"
+			],
+			[
+				"no",
+				"north"
+			],
+			[
+				"direc",
+				"direction"
+			],
+			[
+				"sou",
+				"south"
+			],
+			[
+				"nor",
+				"north"
+			],
+			[
+				"north",
+				"northwest"
+			],
+			[
+				"W",
+				"west"
+			],
+			[
+				"dire",
+				"direction"
+			],
+			[
+				"wind",
+				"windowUnitRect"
+			],
+			[
+				"watch",
+				"watcherFunction"
+			],
+			[
+				"appli",
+				"applicationConfig"
+			],
+			[
+				"text",
+				"textIntoApplicationConfig"
+			],
+			[
+				"mackup",
+				"mackupDir"
+			],
+			[
+				"update",
+				"updateMackupDirectory"
+			],
+			[
+				"math",
+				"matches"
+			],
+			[
+				"outpt",
+				"outputDirectory"
+			],
+			[
+				"price",
+				"priceElement"
+			],
+			[
+				"list",
+				"listingId"
+			],
+			[
+				"listin",
+				"listingElements"
+			],
+			[
+				"listing",
+				"listingCellLookup"
+			],
+			[
+				"sour",
+				"sourcePath"
+			],
+			[
+				"total",
+				"totalPrice"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/ShellScript/ShellScript.sublime-build",
+					""
+				],
+				[
+					"Packages/User/bash.sublime-build",
+					""
+				]
+			],
+			[
+				"Packages/ShellScript/ShellScript.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Tim/dev/timwredwards.github.io"
+	],
+	"file_history":
+	[
+		"/Users/Tim/dev/timwredwards.github.io/_config.yml",
+		"/Users/Tim/dev/rijksmuseum-ios-vip-example/todo.txt",
+		"/Users/Tim/.config/karabiner/karabiner.json",
+		"/Users/Tim/dev/RestartApp.sh",
+		"/private/etc/hosts",
+		"/Users/Tim/Downloads/Swift-type-erasure-playground-master/README.md",
+		"/Users/Tim/dev/rijksmuseum-ios-vip-example/.gitignore",
+		"/Users/Tim/.config/hub",
+		"/Users/Tim/.zsh_history",
+		"/Users/Tim/Downloads/tmp.b64",
+		"/Users/Tim/dev/rijksmuseum-ios-vip-example/.swiftlint.yml",
+		"/Users/Tim/Downloads/[Gmail]/All Mail.mbox/mbox",
+		"/Users/Tim/dev/rijksmuseum-ios-vip-example/TimKit/.swiftlint.yml",
+		"/Users/Tim/tmp/oldmuseum/rijksmuseum-ios-vip-example/.gitignore",
+		"/Users/Tim/dev/rijksmuseum-ios-vip-example/TimTestTools/TimTestTools/Info.plist",
+		"/Users/Tim/dev/rijksmuseum-ios-vip-example/Podfile",
+		"/Users/Tim/Documents/books/.git/COMMIT_EDITMSG",
+		"/Users/Tim/dev/ChromeBankImport/manifest.json",
+		"/Users/Tim/dev/ChromeBankImport/popup.js",
+		"/Users/Tim/Downloads/quratulain-k-and-tim-e_2020-01-09_export.csv",
+		"/Users/Tim/dev/PythonBankImport/main.py",
+		"/Users/Tim/.zshrc",
+		"/Users/Tim/dev/ChromeBankImport/background.js",
+		"/Users/Tim/dev/NodeBankImport/main.js",
+		"/Users/Tim/dev/NodeBankImport/node-bank-import.js",
+		"/Users/Tim/dev/NodeBankImport/package.json",
+		"/Users/Tim/dev/ChromeBankImport/options.js",
+		"/Users/Tim/dev/ChromeBankImport/popup.html",
+		"/Users/Tim/Downloads/selling messages.txt",
+		"/Volumes/EFI/EFI/CLOVER/config.plist",
+		"/Users/Tim/tmp/Budget.yfull",
+		"/Users/Tim/tmp/previews-diagnostics-20191126-123058 PM/previews_diagnostics_summary.txt",
+		"/Users/Tim/Library/Preferences/com.apple.SystemProfiler.plist",
+		"/Users/Tim/Desktop/com.apple.SystemProfiler.plist",
+		"/Users/Tim/tmp/AppleSystemInfo.strings",
+		"/Users/Tim/tmp/com.apple.SystemProfiler.plist",
+		"/Volumes/EFI/EFI/CLOVER/kexts/Other/.empty",
+		"/System/Library/Extensions/IOUSBHostFamily.kext/Contents/PlugIns/AppleUSBXHCIPCI.kext/Contents/Info.plist",
+		"/Volumes/EFI/EFI/CLOVER/drivers/UEFI/AudioDxe.efi",
+		"/Volumes/EFI/.gitignore",
+		"/Volumes/EFI/EFI/CLOVER/._config.plist",
+		"/Volumes/EFI/EFI/.git/config",
+		"/Volumes/EFI/EFI/.git/HEAD",
+		"/Volumes/EFI/EFI/.git/info/exclude",
+		"/Volumes/EFI/EFI/.git/description",
+		"/Volumes/EFI/EFI/.gitignore",
+		"/Volumes/EFI/EFI/.git/ignore",
+		"/Volumes/EFI/EFI/.git/.ignore",
+		"/Volumes/EFI/EFI/Clover_Install_Log.txt",
+		"/Users/Tim/Downloads/Budget/.git/COMMIT_EDITMSG",
+		"/Users/Tim/Downloads/[Gmail]/All Mail.partial.mbox/mbox",
+		"/Users/Tim/Downloads/appsnew.txt",
+		"/Users/Tim/Documents/career/hibooks/interview-questions.txt",
+		"/Users/Tim/Documents/ynab/EUR.ynab4/data44-0C7153F3/417CF0AF-AF60-B25F-9AE6-CBFF4332B59D/Budget.yfull",
+		"/Users/Tim/dev/iOS/Gemfile",
+		"/Users/Tim/dev/iOS/Podfile",
+		"/Users/Tim/Downloads/com.carglass.otto_issue_crash_f9aae78d1d464867944fdad60cb92241_DNE_0_v2.txt",
+		"/Users/Tim/dev/iOS/fastlane/Fastfile",
+		"/Users/Tim/tmp/YNAB64/YNAB64/Adobe AIR.framework/Versions/1.0/Resources/Info.plist",
+		"/Users/Tim/tmp/YNAB64/YNAB64/Adobe AIR.framework/Versions/1.0/Resources/en.lproj/ContentUIText.xml",
+		"/Applications/YNAB 4.app/Contents/Info.plist",
+		"/Users/Tim/dev/YNAB64/styles.swf",
+		"/Users/Tim/dev/YNAB64/YNAB.swf",
+		"/Users/Tim/dev/YNAB64/META-INF/AIR/extensions/mac/META-INF/ANE/extension.xml",
+		"/Users/Tim/dev/YNAB64/META-INF/AIR/extensions/sparkle/META-INF/ANE/extension.xml",
+		"/Users/Tim/dev/YNAB64/META-INF/signatures.xml",
+		"/Applications/YNAB 4.app/Contents/Frameworks/Adobe AIR.framework/Versions/1.0/Resources/Info.plist",
+		"/Users/Tim/dev/YNAB64/META-INF/AIR/application.xml",
+		"/Users/Tim/dev/YNAB64/Licenses.txt",
+		"/Users/Tim/dev/YNAB64/META-INF/AIR/extensions/sparkle/catalog.xml",
+		"/Users/Tim/dev/YNAB64/application.xml",
+		"/Users/Tim/dev/YNAB64/extensions/sparkle/catalog.xml",
+		"/Users/Tim/dev/YNAB64/extensions/sparkle/META-INF/ANE/MacOS-x86-64/SparkleNativeExtension.framework/Versions/A/Resources/Info.plist",
+		"/Users/Tim/dev/YNAB64/extensions/sparkle/META-INF/ANE/extension.xml",
+		"/Users/Tim/dev/YNAB64/Resources/application.xml",
+		"/Users/Tim/dev/YNAB64/Resources/META-INF/signatures.xml",
+		"/Users/Tim/dev/YNAB64/Resources/META-INF/AIR/application.xml",
+		"/Users/Tim/dev/YNAB64/Resources/META-INF/AIR/extensions/mac/catalog.xml",
+		"/Volumes/AIR SDK/AIR SDK Readme.txt",
+		"/Users/Tim/dev/scripts/open-in-github.sh",
+		"/Users/Tim/Downloads/beginners-tut-II.txt",
+		"/Users/Tim/tmp/SketchUp.asm",
+		"/Applications/SketchUp 2019/SketchUp.app/Contents/Info.plist",
+		"/Volumes/SketchUp 2019 (English)/SketchUp 2019/SketchUp.app/Contents/Info.plist",
+		"/Users/Tim/Downloads/SketchUp Pro 2018 v18.0.16976 - Mac OSX/readme.txt",
+		"/Users/Tim/tmp/use cases.txt",
+		"/Users/Tim/dev/iOS/Pods/Pods.xcodeproj/project.pbxproj",
+		"/Users/Tim/Library/Application Support/Sublime Text 3/Packages/Git Conflict Resolver/GitConflictResolver.sublime-settings",
+		"/Users/Tim/Library/Application Support/Sublime Text 3/Packages/User/GitConflictResolver.sublime-settings",
+		"/Users/Tim/dev/iOS/Pods/Target Support Files/Adjust/Adjust-Info.plist",
+		"/Users/Tim/dev/iOS/Pods/Target Support Files/Segment-Adjust/Segment-Adjust-Info.plist",
+		"/Users/Tim/tmp/diff.txt",
+		"/Users/Tim/tmp/givenwhenthenstuff.txt",
+		"/Users/Tim/tmp/Paste.app/Contents/Info.plist",
+		"/Users/Tim/tmp/Paste.app/Contents/PkgInfo",
+		"/Applications/Paste.app/Contents/Resources/Base.lproj/About.storyboardc/Info.plist",
+		"/Users/Tim/tmp/TextSnippetQuickLookViewController.xib",
+		"/Users/Tim/tmp/WhatsNewWindow.nib",
+		"/Applications/Paste.app/Contents/Info.plist",
+		"/Applications/SketchUp 2018/SketchUp.app/Contents/Frameworks/Ruby.framework/Versions/Current",
+		"/Users/Tim/tmp/com.sketchup.SketchUp.2018.plist",
+		"/Users/Tim/tmp/regularlaunchpage.bundle.js",
+		"/Users/Tim/Downloads/Sandwich.app/Contents/Info.plist",
+		"/Users/Tim/dev/Flycut/.git/config",
+		"/Users/Tim/dev/iOS/.gitignore",
+		"/Users/Tim/dev/iOS/fastlane/Matchfile",
+		"/Users/Tim/dev/iOS/.circleci/config.yml",
+		"/Users/Tim/dev/iOS/.swiftlint.yml",
+		"/Users/Tim/Library/Application Support/SketchUp 2018/liclog.txt",
+		"/Users/Tim/dev/iOS/fastlane/Pluginfile",
+		"/Users/Tim/dev/iOS/fastlane/Appfile",
+		"/Users/Tim/Library/Developer/CoreSimulator/Devices/27A88A76-7576-4F46-AFF7-EF5732560A7A/data/Containers/Data/Application/8872791F-6F35-4A6F-9EA0-76A157104FCB/Library/Caches/KSCrashReports/hibooks/hibooks-CrashState.json",
+		"/Users/Tim/dev/scripts/reset_simulator.sh",
+		"/Users/Tim/Library/Application Support/SteerMouse & CursorSense/Device.smsetting",
+		"/Users/Tim/Downloads/SketchUp Pro 2018 v18.1 3D Designer Mac OS X {B4tman}/My Accounts!.txt",
+		"/Users/Tim/Downloads/text.xml",
+		"/Users/Tim/Documents/career/interview-questions.txt",
+		"/Users/Tim/Documents/career/depop/Second interview.txt",
+		"/Users/Tim/Documents/career/depop/Offer details.txt",
+		"/Users/Tim/dev/iOS/Otto/Presentation/Config/EventMap.json",
+		"/Users/Tim/Library/Application Support/BetterTouchTool/btt_user_variables.plist",
+		"/Users/Tim/Library/LaunchAgents/com.timwredwards.officeWifiMonitor.plist",
+		"/Users/Tim/Library/LaunchAgents/com.timwredwards.cronjob.plist",
+		"/Users/Tim/dev/scripts/update-build-status.sh",
+		"/Users/Tim/dev/scripts/get-build-status.sh",
+		"/Users/Tim/tmp/tmp.swift",
+		"/Users/Tim/Library/LaunchAgents/com.timwredwardds.cronjob.plist",
+		"/Users/Tim/Library/LaunchAgents/com.lastpass.LastPassHelper.plist"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 478.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": false,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 162.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 120.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "site.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 150.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 592.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 230.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

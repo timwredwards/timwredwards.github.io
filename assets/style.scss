@@ -324,6 +324,10 @@ table tr td :last-child {
       @include mobile {
         text-align: center;
       }
+
+      @include dark-mode {
+        border-bottom-color: #434345;
+      }
     }
 
     .site-avatar {
@@ -420,10 +424,13 @@ table tr td :last-child {
     .posts > .post {
       padding-bottom: 2em;
       border-bottom: 1px solid $lightGray;
+
+      @include dark-mode {
+        border-bottom-color: #434345;
+      }
     }
 
-    .posts > .post:last-child {
-      padding-bottom: 1em;
+    .posts > .post:last-of-type {
       border-bottom: none;
     }
 
@@ -492,18 +499,6 @@ table tr td :last-child {
           position: absolute;
           left: 0;
           content: '';
-    }
-
-    #bar {
-      background: #000;
-      height: 7px;
-      background-size: cover;
-      background-position: left 60%;
-      position: fixed;
-      top: 0;
-      width: 100%;
-      overflow: hidden;
-      z-index: 1000;
     }
 
     .post h1{

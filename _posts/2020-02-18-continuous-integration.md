@@ -7,6 +7,8 @@ excerpt_separator: <!--more-->
 
 Continuous integration (CI) is defined as:
 
+// add source
+
 >  "a development practice where developers integrate code into a shared repository frequently, preferably several times a day. Each integration can then be verified by an automated build and automated tests."
 
 <!--more-->
@@ -28,7 +30,7 @@ CI in its purest form simply means keeping all team members synchronised, and is
 - It's far easier to review many smaller code diffs than one massive diff, making engineers lives easier.
 - There can be unexpected interactions or conflicts between system components, which are only exposed in an integration test. The earlier the components are tested together, the earlier the interaction is discovered. For example, two engineers write code to present modal controllers on separate branches, when they are both merged, the presentation logic breaks.
 
-If some code is not yet open for review, from the teams perspective, it's a liability and should be reviewed as soon as possible. *That* is continuous integration.
+If some code is not yet open for review, from the team's perspective, it's a liability and should be reviewed as soon as possible. *That* is continuous integration.
 
 ## How to achieve Continuous Integration
 Making code more CI-friendly can be as simple as breaking down features into smaller modules.
@@ -45,9 +47,7 @@ Understanding and using CI effectively will result in code being committed more 
 
 In order to alleviate some of the stresses of CI, make sure to write a build system which is robust and uses generalised tooling such as [Fastlane](https://fastlane.tools){:target="_blank"}.
 
-It's also inadvisable to enforce any overly zealous requirements such as linting. You can display warnings, sure, but failing a build because of something like linting will slow down the feedback loop.
-
-> Perfection is the enemy of progress. - Winston Churchill
+It's also inadvisable to enforce any overly zealous requirements such as linting. You can display warnings, sure, but failing a build because of something like linting will slow down the feedback loop. As Winston Churchill once said: *"Perfection is the enemy of progress."*
 
 That being said, there are some build tools such as automated unit testing and code metric reporting which can be invaluable in improving the quality of your codebase and should be used. Like so many things in Software Engineering, it's a balance of both speed and code quality, and is entirely dependent on the context in which the code is being written.
 
@@ -63,7 +63,8 @@ CI can, by extension, also apply to design and product teams:
 
 ## Conclusion
 
-Developing high-quality software is an ongoing effort, and I believe continuous integration can earlier expose potential issues in code, raise bugs sooner and help teams perform better, given the correct tools and culture.
+
+Developing high-quality software is an ongoing effort, and I believe continuous integration can expose potential issues in code earlier, raise bugs sooner, and help teams perform better, given the correct tools and culture.
 
 Thanks for reading, if you have any questions or comments, please use the contact button at the bottom of the page to get in touch.
 

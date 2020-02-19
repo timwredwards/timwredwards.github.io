@@ -18,4 +18,10 @@ Lead to the conclusion
 Include code examples or diagrams
 Conclusion is a summary of the main points of the body.
 
-Futher reading
+
+# Future Ideas
+- Do further reading
+- Do about
+
+- Logging vs error propogation on iOS
+- Testing architecture and mocking

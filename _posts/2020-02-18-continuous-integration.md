@@ -2,11 +2,14 @@
 layout: post
 title:  "Achieving Success Through Continuous Integration"
 categories: [DevOps, Company Culture]
+excerpt_separator: <!--more-->
 ---
 
 Continuous integration (CI) is defined as:
 
 >  "a development practice where developers integrate code into a shared repository frequently, preferably several times a day. Each integration can then be verified by an automated build and automated tests."
+
+<!--more-->
 
 While this definition is vague, I've seen many implementations of CI pipelines across different companies, and it seems there is some confusion about the problem that CI aims to solve.
 

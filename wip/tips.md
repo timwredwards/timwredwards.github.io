@@ -5,7 +5,8 @@
 - Headline should be a powerful message which attracts attention
 
 Introduction:
-What is the problem and why is it important?
+What is the problem?
+Why is it important?
 What is the approach to solve the problem? What's wrong with the current method?
 What are the results?
 

@@ -11,11 +11,11 @@ Continuous integration (CI) is defined as:
 
 <!--more-->
 
-While this definition is vague, I've seen many implementations of CI pipelines across different companies, and it seems there is some confusion about the problem that CI aims to solve.
+While this definition is vague, I've seen many implementations of CI pipelines across different teams, and it seems there is some confusion about the problem that CI aims to solve.
 
 ## The Problem
 
-Some companies see their repository as a dumping ground for code, and their build system as a way of merely automating a test suite, but this misses the point entirely.
+Some teams see their repository as simply a way of storing all their code in the same place, and their build system as a way of merely automating a test suite or enforcing certain code standards, but this misses the point entirely.
 
 CI is a *philosophy*, not a tool. The build systems are the tools; Fastlane, Travis, Bitrise, and even git itself are tools to achieve continuous integration of work within a team.
 
@@ -35,7 +35,7 @@ Making code more CI-friendly can be as simple as breaking down features into sma
 
 For example, if you're tasked with downloading a JSON file, decoding it, and displaying the result, you could first open a pull-request for the API call, then another for the JSON decoding, then finally another for the UI. This is a great way to get your code integrated into the primary branch sooner, without introducing instability.
 
-Another example is if you're working on a navigation flow, you could systematically write the view controllers and open pull-requests for each, only presenting the new UI when all the other work is finished. This way, all your work has already been reviewed by the time the feature is finished, and there are no nasty massive pull-requests for your team to review.
+Another example is if you're working on a navigation flow, you could systematically write the view controllers and open pull-requests for each, only presenting the new UI when all the other work is finished. This way, all your work has already been reviewed by the time the feature is finished, and there are no huge 1000-line pull-requests for your team to review.
 
 The ultimate solution is to use remote feature flags, with either an in-house solution, or a behavioural analytics framework such as [Mixpanel](https://mixpanel.com){:target="_blank"}. Many large companies use these tools to decouple their engineering workflow from their feature availability, which is often why you see release notes for these apps as "Bug fixes and other improvements"; It's irrelevant to the end user what's in "this release".
 
@@ -48,6 +48,8 @@ In order to alleviate some of the stresses of CI, make sure to write a build sys
 It's also inadvisable to enforce any overly zealous requirements such as linting. You can display warnings, sure, but failing a build because of something like linting will slow down the feedback loop.
 
 > Perfection is the enemy of progress. - Winston Churchill
+
+That being said, there are some build tools such as automated unit testing and code metric reporting which can be invaluable in improving the quality of your codebase and should be used. Like so many things in Software Engineering, it's a balance of both speed and code quality, and is entirely dependent on the context in which the code is being written.
 
 ## CI in an Organisation
 

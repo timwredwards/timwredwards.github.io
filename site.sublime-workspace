@@ -241,13 +241,13 @@
 	"expanded_folders":
 	[
 		"/Users/Tim/dev/timwredwards.github.io",
-		"/Users/Tim/dev/timwredwards.github.io/_sass",
 		"/Users/Tim/dev/timwredwards.github.io/assets"
 	],
 	"file_history":
 	[
 		"/Users/Tim/dev/timwredwards.github.io/assets/style.scss",
 		"/Users/Tim/dev/timwredwards.github.io/_layouts/post.html",
+		"/Users/Tim/dev/timwredwards.github.io/_layouts/default.html",
 		"/Users/Tim/dev/timwredwards.github.io/_config.yml",
 		"/Users/Tim/dev/rijksmuseum-ios-vip-example/todo.txt",
 		"/Users/Tim/.config/karabiner/karabiner.json",
@@ -372,8 +372,7 @@
 		"/Users/Tim/Library/LaunchAgents/com.timwredwards.officeWifiMonitor.plist",
 		"/Users/Tim/Library/LaunchAgents/com.timwredwards.cronjob.plist",
 		"/Users/Tim/dev/scripts/update-build-status.sh",
-		"/Users/Tim/dev/scripts/get-build-status.sh",
-		"/Users/Tim/tmp/tmp.swift"
+		"/Users/Tim/dev/scripts/get-build-status.sh"
 	],
 	"find":
 	{
@@ -392,6 +391,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h5",
+			"highlight",
+			"a",
 			"submit",
 			"share",
 			"dark-mode",

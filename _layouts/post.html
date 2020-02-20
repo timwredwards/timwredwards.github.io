@@ -12,19 +12,23 @@ layout: default
     {% endif %}
     <div class="post-tags">
       {% if post %}
-        {% assign categories = post.categories %}
+      {% assign categories = post.categories %}
       {% else %}
-        {% assign categories = page.categories %}
+      {% assign categories = page.categories %}
       {% endif %}
       {% for category in categories %}
-        <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-        {% unless forloop.last %}&nbsp;{% endunless %}
+      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+      {% unless forloop.last %}&nbsp;{% endunless %}
       {% endfor %}
     </div>
   </div>
-    
+
   <div class="entry">
     {{ content }}
+    <br>
+    <b>Thanks for reading</b>, if you have any questions or comments, please use the contact button at the bottom of the page to get in touch.<br>
+    <br>
+    Tim
   </div>
 
   <div>

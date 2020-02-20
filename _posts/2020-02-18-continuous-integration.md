@@ -30,7 +30,7 @@ CI in its purest form simply means keeping all team members synchronised, and is
 
 If some code is not yet open for review, from the team's perspective, it's a liability and should be reviewed as soon as possible. *That* is continuous integration.
 
-## How to achieve Continuous Integration
+## How to Achieve Continuous Integration
 Making code more CI-friendly can be as simple as breaking down features into smaller modules.
 
 For example, if you're tasked with downloading a JSON file, decoding it, and displaying the result, you could first open a pull-request for the API call, then another for the JSON decoding, then finally another for the UI. This is a great way to get your code integrated into the primary branch sooner, without introducing instability.
@@ -63,7 +63,3 @@ CI can, by extension, also apply to design and product teams:
 
 
 Developing high-quality software is an ongoing effort, and I believe continuous integration can expose potential issues in code earlier, raise bugs sooner, and help teams perform better, given the correct tools and culture.
-
-Thanks for reading, if you have any questions or comments, please use the contact button at the bottom of the page to get in touch.
-
-Tim

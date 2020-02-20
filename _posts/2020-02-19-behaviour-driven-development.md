@@ -6,20 +6,20 @@ excerpt_separator: <!--more-->
 ---
 Knowledge-sharing is arguably one of the most important aspects of an engineering team, and is something I feel is under-utilised, at least in the teams I've been a part of.
 
-If team members share the right information, and at the right level of abstraction, they can learn from each others mistakes, collaborate on system architecture design, and discuss other more general high-level concepts. All of these can improve system stability and engineer efficiency.
+If team members share the right information, and at the right level of abstraction, they can learn from each other's mistakes, collaborate on system architecture design, and discuss other more general high-level concepts. All of these can improve system stability and engineer efficiency.
 <!--more-->
 
 Unfortunately, it's common for information to be stored separately between mobile app development teams: bugs and fixes are often duplicated, and there is never an opportunity for high-level discussion due to the delta of knowledge between engineers.
 
 I've worked in companies where mobile teams literally never talked to each other, despite the fact a lot of their problems were extremely similar.
 
-Worse still is when the engineering department of a company sees themselves as separate to the rest of the company, or even in direct opposition. I see this attitude prevalent in more junior engineers, who don't yet appreciate the social dynamics of a company, or understand that you're all a team, and the value of the end product is a collaborative effort across the board, not just engineering.
+Worse still is when the engineering department of a company sees itself as separate to the rest of the company, or even in direct opposition. I see this attitude prevalent in more junior engineers, who don't yet appreciate the social dynamics of a company, or understand that everyone is part of the same team, and the value of the end product is a collaborative effort across the board, not just engineering.
 
 Ultimately, a cold attitude and lack of collaboration between teams duplicates problems, slows down communication and erodes efficiency.
 
 ## What causes this attitude?
 
-I believe there is an inherent tribal attitude in Technology: I consistently see arguments between iOS and Android fans about which mobile OS is better, from both a development and consumer perspective, and also which development environment is better, Windows, Mac or Linux. Even technology choices can cause a visceral reaction from some engineers: "Ew why are you using X framework? Y is the new hotness". In my experience this is particularly prevalent in front-end web development, although I've also see it occurring within mobile teams.
+I believe there is an inherent tribal attitude in Technology: I consistently see arguments between iOS and Android fans about which mobile OS is better, from both a development and consumer perspective, and also which development environment is better, Windows, Mac or Linux. Even technology choices can cause a visceral reaction from some engineers: "Ew, why are you using X framework? Y is the new hotness". In my experience this is particularly prevalent in front-end web development, although I've also seen it occurring within mobile teams.
 
 These attitudes are unhelpful at best and toxic at worst; it's important to understand Software Engineering is an incredibly complex process, and there is no perfect solution for any situation, it's always a game of balance and compromises to create high-quality software.
 
@@ -33,11 +33,11 @@ A commonly touted solution to improving cohesiveness between mobile teams is cro
 
 While these technologies may work reasonably well in creating MVPs or simple CRUD based applications, mobile applications become exponentially more complex the more features are included, and these cross-platform frameworks simply do not provide the level of control or performance necessary to manage this complexity at scale. The debugging experience is also often frustrating, particularly when dealing with threading issues. This is what Airbnb experienced when they adopted React Native, eventually causing them to [drop the framework](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a){:target="_blank"} and move to a native implementation.
 
-You could also write a c++ cross-platform library, which has it's own set of issues. Most notably, due to differences in the way mobile operating systems handle concepts such as threading and app lifecycles, debugging becomes an absolute nightmare; tracking down a bug across different frameworks in multiple programming languages becomes almost impossible. There are also issues with hiring and retaining staff, as not many c++ engineers want to work on mobile platforms. Dropbox recently [tried this approach](https://blogs.dropbox.com/tech/2019/08/the-not-so-hidden-cost-of-sharing-code-between-ios-and-android/){:target="_blank"} and decided to ditch it in favour of separated native implementations
+You could also write a c++ cross-platform library, which has its own set of issues. Most notably, due to differences in the way mobile operating systems handle concepts such as threading and app lifecycles, debugging becomes an absolute nightmare; tracking down a bug across different frameworks in multiple programming languages becomes almost impossible. There are also issues with hiring and retaining staff, as not many c++ engineers want to work on mobile platforms. Dropbox recently [tried this approach](https://blogs.dropbox.com/tech/2019/08/the-not-so-hidden-cost-of-sharing-code-between-ios-and-android/){:target="_blank"} and decided to ditch it in favour of separated native implementations
 
 There is also talk of using [Kotlin](https://kotlinlang.org/docs/reference/multiplatform.html){:target="_blank"} to create cross-platform mobile frameworks, but it remains yet to be seen if this can alleviate any of these aforementioned c++ issues.
 
-As it stands, there's simply no incentive for Apple or Google to make cross-platform development easy, and I see no convincing 3rd party alternative(s). This means both business logic and UI must written separately for all platforms, but there are things we can do to make this easier...
+As it stands, there's simply no incentive for Apple or Google to make cross-platform development easy, and I see no convincing 3rd party alternative(s). This means both business logic and UI must be written separately for all platforms, but there are things we can do to make this easier...
 
 ## Behaviour Driven Development (BDD)
 
@@ -65,7 +65,7 @@ Given the email text-field
 	When I input an email that's already registered
 		Then show an informative dialog
 		
-Given the password textfield
+Given the password text-field
 	When I input an invalid password
 		Then show an error
 
@@ -79,16 +79,16 @@ We can see here the core behaviours of the sign-up screen, and if all these test
 
 To make adhering to behavioural tests a little easier on mobile platforms, you can use frameworks such as [Quick](https://github.com/Quick/Quick){:target="_blank"}, which help display these concepts as unit tests, and keep everything organised. You could even write a script as part of your build system that converts your behavioural test suite into unit test templates, ready to be implemented.
 
-This kind of platform-agnostic business logic is helpful, providing a "single source of truth" on how the app should behave, and giving both engineers and project stakeholders a shared design language.
+This kind of platform-agnostic business logic is helpful, providing a 'single source of truth' on how the app should behave, and giving both engineers and project stakeholders a shared design language.
 
 #### Advantages of BDD
 - Because teams are sharing knowledge and creating a formalised behavioural test suite, potential pitfalls can be spotted earlier, and spark high-level architectural discussions sooner.
-- Having a unified test suite means you have a centralised "contract" between engineers and stakeholders stating how the app should behave, improving communication and mitigating misunderstandings.
+- Having a unified test suite means you have a centralised 'contract' between engineers and stakeholders stating how the app should behave, improving communication and mitigating misunderstandings.
 - Because any edge cases are added as new tests in the suite, and all platforms should be passing the tests, it can mitigate bugs that would have occurred at a later stage of development.
 - Using BDD abstracts knowledge away from a single employee or team, reducing risk of loss if someone leaves the company or gets sick, lowering your [bus factor](https://en.wikipedia.org/wiki/Bus_factor){:target="_blank"}.
 - Because everyone is using a shared design language, and is working in the same behavioural context, it's easier for individuals to understand the problems of others, and help them find a solution.
 
 ## Conclusion
-We've discussed here some of the common communication and knowledge-sharing pitfalls I've experienced in companies, and hypothesised why I think they might be happening. We've discussed tribalism in tech culture, and explored cross-platform frameworks as a potential solution. Finally, I proposed behaviour driven development as a partial solution to knowledge-sharing, gave a simple example on how to use BDD in practise.
+We've discussed here some of the common communication and knowledge-sharing pitfalls I've experienced in companies, and hypothesised why I think they might be happening. We've discussed tribalism in tech culture, and explored cross-platform frameworks as a potential solution. Finally, I proposed behaviour driven development as a partial solution to knowledge-sharing, and gave a simple example on how to use BDD in practice.
 
-Ultimately, communication between teams in technology is hard, and while there are certainly differences in the tools and frameworks being used by mobile engineers, there are definitely ways to build bridges, improve communication and make engineers lives easier in the process.
+Ultimately, communication between teams in technology is hard, and while there are certainly differences in the tools and frameworks being used by mobile engineers, there are definitely ways to build bridges, improve communication and make engineer's lives easier in the process.

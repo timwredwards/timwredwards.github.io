@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"margin",
+				"margin-top\tproperty"
+			],
+			[
+				"cat",
+				"category"
+			],
+			[
+				"cate",
+				"categories"
+			],
+			[
+				"categ",
+				"category"
+			],
+			[
+				"lists",
+				"list-style-position\tproperty"
+			],
+			[
+				"textal",
+				"text-align\tproperty"
+			],
+			[
+				"align",
+				"text-align\tproperty"
+			],
+			[
+				"flex",
+				"flex-grow\tproperty"
+			],
+			[
+				"inline",
+				"inline-block\tdisplay"
+			],
+			[
+				"impo",
+				"important"
+			],
+			[
+				"wid",
+				"width\tproperty"
+			],
+			[
 				"padding",
 				"padding-top\tproperty"
 			],
@@ -241,12 +285,33 @@
 	"expanded_folders":
 	[
 		"/Users/Tim/dev/timwredwards.github.io",
+		"/Users/Tim/dev/timwredwards.github.io/_includes",
+		"/Users/Tim/dev/timwredwards.github.io/_layouts",
+		"/Users/Tim/dev/timwredwards.github.io/_pages",
+		"/Users/Tim/dev/timwredwards.github.io/_posts",
+		"/Users/Tim/dev/timwredwards.github.io/_sass",
 		"/Users/Tim/dev/timwredwards.github.io/assets"
 	],
 	"file_history":
 	[
 		"/Users/Tim/dev/timwredwards.github.io/assets/style.scss",
 		"/Users/Tim/dev/timwredwards.github.io/_layouts/post.html",
+		"/Users/Tim/dev/timwredwards.github.io/index.html",
+		"/Users/Tim/dev/timwredwards.github.io/assets/search.json",
+		"/Users/Tim/dev/timwredwards.github.io/_pages/categories.md",
+		"/Users/Tim/dev/timwredwards.github.io/_pages/search.md",
+		"/Users/Tim/dev/timwredwards.github.io/search.json",
+		"/Users/Tim/dev/timwredwards.github.io/_includes/search-result.html",
+		"/Users/Tim/dev/timwredwards.github.io/_site/berlin/index.html",
+		"/Users/Tim/dev/timwredwards.github.io/_site/behaviour-driven-development/index.html",
+		"/Users/Tim/dev/timwredwards.github.io/_site/index.html",
+		"/Users/Tim/dev/timwredwards.github.io/_site/continuous-integration/index.html",
+		"/Users/Tim/dev/timwredwards.github.io/_site/assets/style.css.map",
+		"/Users/Tim/dev/timwredwards.github.io/_site/assets/style.css",
+		"/Users/Tim/dev/timwredwards.github.io/_layouts/page.html",
+		"/Users/Tim/dev/timwredwards.github.io/assets/activate-category.js",
+		"/Users/Tim/dev/timwredwards.github.io/site.sublime-project",
+		"/Users/Tim/dev/timwredwards.github.io/_includes/test.html",
 		"/Users/Tim/dev/timwredwards.github.io/_layouts/default.html",
 		"/Users/Tim/dev/timwredwards.github.io/_config.yml",
 		"/Users/Tim/dev/rijksmuseum-ios-vip-example/todo.txt",
@@ -356,23 +421,7 @@
 		"/Users/Tim/dev/iOS/fastlane/Matchfile",
 		"/Users/Tim/dev/iOS/.circleci/config.yml",
 		"/Users/Tim/dev/iOS/.swiftlint.yml",
-		"/Users/Tim/Library/Application Support/SketchUp 2018/liclog.txt",
-		"/Users/Tim/dev/iOS/fastlane/Pluginfile",
-		"/Users/Tim/dev/iOS/fastlane/Appfile",
-		"/Users/Tim/Library/Developer/CoreSimulator/Devices/27A88A76-7576-4F46-AFF7-EF5732560A7A/data/Containers/Data/Application/8872791F-6F35-4A6F-9EA0-76A157104FCB/Library/Caches/KSCrashReports/hibooks/hibooks-CrashState.json",
-		"/Users/Tim/dev/scripts/reset_simulator.sh",
-		"/Users/Tim/Library/Application Support/SteerMouse & CursorSense/Device.smsetting",
-		"/Users/Tim/Downloads/SketchUp Pro 2018 v18.1 3D Designer Mac OS X {B4tman}/My Accounts!.txt",
-		"/Users/Tim/Downloads/text.xml",
-		"/Users/Tim/Documents/career/interview-questions.txt",
-		"/Users/Tim/Documents/career/depop/Second interview.txt",
-		"/Users/Tim/Documents/career/depop/Offer details.txt",
-		"/Users/Tim/dev/iOS/Otto/Presentation/Config/EventMap.json",
-		"/Users/Tim/Library/Application Support/BetterTouchTool/btt_user_variables.plist",
-		"/Users/Tim/Library/LaunchAgents/com.timwredwards.officeWifiMonitor.plist",
-		"/Users/Tim/Library/LaunchAgents/com.timwredwards.cronjob.plist",
-		"/Users/Tim/dev/scripts/update-build-status.sh",
-		"/Users/Tim/dev/scripts/get-build-status.sh"
+		"/Users/Tim/Library/Application Support/SketchUp 2018/liclog.txt"
 	],
 	"find":
 	{
@@ -391,6 +440,23 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"span",
+			"text-align: left",
+			"category",
+			"class=.post-category",
+			".post-tag",
+			"archives",
+			"category",
+			"flexbox",
+			"elxbox",
+			"spacer",
+			"date",
+			"tags",
+			"red",
+			"entry",
+			"enty",
+			"entry",
+			"date",
 			"h5",
 			"highlight",
 			"a",
@@ -402,9 +468,11 @@
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": true,
+		"regex": false,
 		"replace_history":
 		[
+			"class=\"post-category",
+			".post-category"
 		],
 		"reverse": false,
 		"show_context": false,

@@ -50,12 +50,85 @@
 h5 {
   margin-top: -10px !important;
   margin-bottom: 30px !important;
-font-size: 14px !important;
+  font-size: 14px !important;
 }
 
 .dark-mode-invert {
   @include dark-mode {
     filter: invert(100%);
+  }
+}
+
+.tooltip-toggle {
+  cursor: pointer;
+  position: relative;
+
+  //Tooltip text container - above element
+  //You can adjust the position to make the container appear below or beside the element
+  &::before {
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    content: attr(aria-label); //This pulls in the text from the element with the tooltip
+    left: -80px; //This centers the container above the element
+    padding: 1rem;
+    position: absolute;
+    text-transform: none;
+    top: -80px; //This places the container above the element that needs a tooltip
+    transition: all 0.5s ease;
+    width: 160px;
+  }
+
+  //Tooltip arrow
+  //You can adjust the position of this to align nicely with the element that
+  //needs a tooltip. You can also use `transform` to rotate it to make the
+  //tooltip work below or next to the element.
+  &::after {
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #000;
+    content: " ";
+    font-size: 0;
+    left: 9px; //This centers the arrow above the element with the tooltip
+    line-height: 0;
+    margin-left: -5px;
+    position: absolute;
+    top: -12px; //This positions the arrow at the bottom of the container
+    width: 0;
+  }
+
+  //Setting up the transition
+  &::before,
+  &::after {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  //Triggering the transition
+  &:focus::before,
+  &:focus::after,
+  &:hover::before,
+  &:hover::after {
+    opacity: 1;
+    transition: all 0.75s ease;
+  }
+}
+
+.category-post {
+  line-height: 2em;
+  margin-left: 1em;
+  text-indent: -1em;
+}
+
+.category-active {
+  padding: 0px 8px;
+  width: fit-content;
+  background-color: $lightGray;
+  border-radius: 0.5em;
+  margin-left: -8px;
+
+  @include dark-mode {
+    background: #434345;
   }
 }
 
@@ -100,7 +173,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-  text-align: center;
+  /*text-align: center;*/
 
   @include mobile {
     line-height: 1.4;
@@ -190,383 +263,359 @@ table tr td :last-child {
 	margin-bottom: 0;
 }
 
-/*.detailed .entry p:first-of-type:first-letter {
-    float: left;
-    margin: 0.13em 0.05em 0 -0.05em;
-    font-size: 3.333em;
-    line-height: 0.75em;
-    }*/
+#search-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
 
-    #search-container {
-      text-align: center;
-    }
+.share-box {
+  font-weight: bold;
+  color: #222;
+  line-height: 100px;
 
-    #search-input {
-      width: 80%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
-      font-size: 18px;
-    }
+  @include dark-mode {
+    color: #d0d0d0;
+  }
+}
 
-    .share-box {
-      font-weight: bold;
-      color: #222;
-      line-height: 100px;
+span[data-pullquote] {
+  display: block;
 
-      @include dark-mode {
-        color: #d0d0d0;
-      }
-    }
+  @include mobile {
+    display: none;
+  }
+}
 
-    span[data-pullquote] {
-      display: block;
+span[data-pullquote]:before {
+  content: attr(data-pullquote);
+  float: right;
+  width: 200px;
+  margin: 0 0 0.5em 30px;
+  padding: 0 -5% 0 0;
+  font-size: 1.3em;
+  font-style: italic;
+  color: green;
+  text-align: center;
+}
 
-      @include mobile {
-        display: none;
-      }
-    }
+a {
+  color: $blue;
+  text-decoration: none;
+  cursor: pointer;
+  &:hover, &:active {
+    opacity: 0.75;
+  }
+}
 
-    span[data-pullquote]:before {
-      content: attr(data-pullquote);
-      float: right;
-      width: 200px;
-      margin: 0 0 0.5em 30px;
-      padding: 0 -5% 0 0;
-      font-size: 1.3em;
-      font-style: italic;
-      color: green;
-      text-align: center;
-    }
+ul, ol {
+  margin: 15px 0;
+  padding-left: 30px;
+}
 
-    a {
+ul {
+  list-style-type: disc;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+ol ul, ul ol, ul ul, ol ol {
+  margin: 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+}
+
+em, i {
+  font-style: italic;
+}
+
+strong, b {
+  font-weight: bold;
+}
+
+img {
+  max-width: 100%;
+}
+
+p > img {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+// Fixes images in popup boxes from Google Translate
+.gmnoprint img {
+  max-width: none;
+}
+
+.date {
+  font-style: italic;
+  color: $gray;
+}
+
+// Specify the color of the selection
+::-moz-selection {
+  color: $black;
+  background: $lightGray;
+}
+::selection {
+  color: $black;
+  background: $lightGray;
+}
+
+// Nicolas Gallagher's micro clearfix hack
+// http://nicolasgallagher.com/micro-clearfix-hack/
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+/*********************/
+/* LAYOUT / SECTIONS */
+/*********************/
+
+//
+// .masthead
+//
+
+.wrapper-masthead {
+  margin-bottom: 25px;
+}
+
+.masthead {
+  padding: 20px 0;
+  border-bottom: 1px solid $lightGray;
+
+  @include mobile {
+    text-align: center;
+  }
+
+  @include dark-mode {
+    border-bottom-color: #434345;
+  }
+}
+
+.site-avatar {
+  float: left;
+  width: 70px;
+  height: 70px;
+  margin-right: 15px;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+
+  img {
+    border-radius: 100%;
+  }
+}
+
+.site-info {
+  float: left;
+
+  @include mobile {
+    float: none;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.site-name {
+  margin: 0;
+  color: $darkGray;
+  cursor: pointer;
+  font-family: $helveticaNeue;
+  font-weight: 300;
+  font-size: 28px;
+  letter-spacing: 1px;
+  text-align: left;
+
+  @include mobile {
+    text-align: center;
+  }
+}
+
+.site-description {
+  margin: -5px 0 0 0;
+  color: $gray;
+  font-size: 16px;
+
+  @include mobile {
+    margin: 3px 0;
+  }
+
+  @include dark-mode {
+    color: #d0d0d0;
+  }
+}
+
+nav {
+  float: right;
+  margin-top: 23px; // @TODO: Vertically middle align
+  font-family: $helveticaNeue;
+  font-size: 18px;
+
+  @include mobile {
+    float: none;
+    margin-top: 9px;
+    display: block;
+    font-size: 16px;
+  }
+
+  a {
+    margin-left: 20px;
+    color: $darkGray;
+    text-align: right;
+    font-weight: 300;
+    letter-spacing: 1px;
+
+    @include mobile {
+      margin: 0 10px;
       color: $blue;
-      text-decoration: none;
-      cursor: pointer;
-      &:hover, &:active {
-        opacity: 0.75;
-      }
     }
 
-    ul, ol {
-      margin: 15px 0;
-      padding-left: 30px;
+    @include dark-mode {
+      color: #ddd;
     }
+  }
+}
 
-    ul {
-      list-style-type: disc;
+//
+// .main
+//
+
+.posts > .post {
+  padding-bottom: 2em;
+  border-bottom: 1px solid $lightGray;
+
+  @include dark-mode {
+    border-bottom-color: #434345;
+  }
+}
+
+.posts > .post:last-of-type {
+  border-bottom: none;
+}
+
+.post {
+  blockquote {
+    margin: 1.8em .8em;
+    /*border-left: 2px solid $gray;*/
+    padding: 0.1em 1em;
+    color: $darkerGray;
+    font-size: 22px;
+    font-style: italic;
+    background-color: #f4f4f4;
+
+    @include dark-mode {
+      color: #d0d0d0;
+      background: #2A2A2C;
     }
+  }
 
-    ol {
-      list-style-type: decimal;
-    }
+  .you-may-like{
+    margin: 1.8em .8em;
+    /*border-left: 2px solid $gray;*/
+    padding: 0.1em 1em;
+    color: $gray;
+    font-size: 22px;
+    font-style: italic;
+    background-color: #ddffb5;;
+  }
 
-    ol ul, ul ol, ul ul, ol ol {
-      margin: 0;
-    }
+  .comments {
+    margin-top: 10px;
+  }
 
-    ul ul, ol ul {
-      list-style-type: circle;
-    }
+  .read-more {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}
 
-    em, i {
-      font-style: italic;
-    }
+.wrapper-container {
+  min-height: 100%;
+  position: relative;
+}
 
-    strong, b {
-      font-weight: bold;
-    }
+.wrapper-main {
+  padding-bottom: 180px;
+}
 
-    img {
-      max-width: 100%;
-    }
+.wrapper-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: $lightGray;
+  line-height: 2em;
 
-    p > img {
-      text-align: center;
-      display: block;
-      margin: 0 auto;
-    }
+  @include dark-mode {
+    background: #434345;
+  }
+}
 
-    // Fixes images in popup boxes from Google Translate
-    .gmnoprint img {
-      max-width: none;
-    }
+footer {
+  padding-top: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+}
 
-    .date {
-      font-style: italic;
-      color: $gray;
-    }
+body:after {
+      background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
+      width: 100%;
+      height: 5px;
+      top: 0;
+      position: absolute;
+      left: 0;
+      content: '';
+}
 
-    // Specify the color of the selection
-    ::-moz-selection {
-      color: $black;
-      background: $lightGray;
-    }
-    ::selection {
-      color: $black;
-      background: $lightGray;
-    }
+.post h1{
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+  font-kerning: auto;
+  font-feature-settings: "kern","liga","dlig","hlig","cswh";
+  line-height: 1.2;
+}
 
-    // Nicolas Gallagher's micro clearfix hack
-    // http://nicolasgallagher.com/micro-clearfix-hack/
-    .clearfix:before,
-    .clearfix:after {
-      content: " ";
-      display: table;
-    }
+.page h1{
+  font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-weight: bold;
+  font-kerning: auto;
+  font-feature-settings: "kern","liga","dlig","hlig","cswh";
+  line-height: 1.2;
+}
 
-    .clearfix:after {
-      clear: both;
-    }
+.cd-container a {
+  color: #30434e;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+}
 
-    /*********************/
-    /* LAYOUT / SECTIONS */
-    /*********************/
+.cd-container img {
+  max-width: 100%;
+}
 
-    //
-    // .masthead
-    //
-
-    .wrapper-masthead {
-      margin-bottom: 25px;
-    }
-
-    .masthead {
-      padding: 20px 0;
-      border-bottom: 1px solid $lightGray;
-
-      @include mobile {
-        text-align: center;
-      }
-
-      @include dark-mode {
-        border-bottom-color: #434345;
-      }
-    }
-
-    .site-avatar {
-      float: left;
-      width: 70px;
-      height: 70px;
-      margin-right: 15px;
-
-      @include mobile {
-        float: none;
-        display: block;
-        margin: 0 auto;
-      }
-
-      img {
-        border-radius: 100%;
-      }
-    }
-
-    .site-info {
-      float: left;
-
-      @include mobile {
-        float: none;
-        display: block;
-        margin: 0 auto;
-      }
-    }
-
-    .site-name {
-      margin: 0;
-      color: $darkGray;
-      cursor: pointer;
-      font-family: $helveticaNeue;
-      font-weight: 300;
-      font-size: 28px;
-      letter-spacing: 1px;
-      text-align: left;
-
-      @include mobile {
-        text-align: center;
-      }
-    }
-
-    .site-description {
-      margin: -5px 0 0 0;
-      color: $gray;
-      font-size: 16px;
-
-      @include mobile {
-        margin: 3px 0;
-      }
-
-      @include dark-mode {
-        color: #d0d0d0;
-      }
-    }
-
-    nav {
-      float: right;
-      margin-top: 23px; // @TODO: Vertically middle align
-      font-family: $helveticaNeue;
-      font-size: 18px;
-
-      @include mobile {
-        float: none;
-        margin-top: 9px;
-        display: block;
-        font-size: 16px;
-      }
-
-      a {
-        margin-left: 20px;
-        color: $darkGray;
-        text-align: right;
-        font-weight: 300;
-        letter-spacing: 1px;
-
-        @include mobile {
-          margin: 0 10px;
-          color: $blue;
-        }
-
-        @include dark-mode {
-          color: #ddd;
-        }
-      }
-    }
-
-    //
-    // .main
-    //
-
-    .posts > .post {
-      padding-bottom: 2em;
-      border-bottom: 1px solid $lightGray;
-
-      @include dark-mode {
-        border-bottom-color: #434345;
-      }
-    }
-
-    .posts > .post:last-of-type {
-      border-bottom: none;
-    }
-
-    .post {
-      blockquote {
-        margin: 1.8em .8em;
-        /*border-left: 2px solid $gray;*/
-        padding: 0.1em 1em;
-        color: $darkerGray;
-        font-size: 22px;
-        font-style: italic;
-        background-color: #f4f4f4;
-
-        @include dark-mode {
-          color: #d0d0d0;
-          background: #2A2A2C;
-        }
-      }
-
-      .you-may-like{
-        margin: 1.8em .8em;
-        /*border-left: 2px solid $gray;*/
-        padding: 0.1em 1em;
-        color: $gray;
-        font-size: 22px;
-        font-style: italic;
-        background-color: #ddffb5;;
-      }
-
-      .comments {
-        margin-top: 10px;
-      }
-
-      .read-more {
-        text-transform: uppercase;
-        font-size: 15px;
-      }
-    }
-
-    .wrapper-container {
-      min-height: 100%;
-      position: relative;
-    }
-
-    .wrapper-main {
-      padding-bottom: 134px;
-    }
-
-    .wrapper-footer {
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      background-color: $lightGray;
-      line-height: 2em;
-
-      @include dark-mode {
-        background: #434345;
-      }
-    }
-
-    footer {
-      padding-top: 20px;
-      padding-bottom: 10px;
-      text-align: center;
-    }
-
-    body:after {
-          background: linear-gradient(to right, #ffffff   0, #2196F3   33%, #E91E63   66%, #000 100%);
-          width: 100%;
-          height: 5px;
-          top: 0;
-          position: absolute;
-          left: 0;
-          content: '';
-    }
-
-    .post h1{
-      font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      text-align: center;
-      font-weight: bold;
-      font-kerning: auto;
-      font-feature-settings: "kern","liga","dlig","hlig","cswh";
-      line-height: 1.2;
-    }
-
-    .page h1{
-      font-family: -system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      text-align: center;
-      font-weight: bold;
-      font-kerning: auto;
-      font-feature-settings: "kern","liga","dlig","hlig","cswh";
-      line-height: 1.2;
-    }
-
-    .author_title{
-      text-align: center;
-      color: #939aa1;
-      letter-spacing: 2px;
-    }
-
-    .post_date{
-      text-align: center;
-      color: #939aa1;
-    }
-
-    .cd-container a {
-      color: #30434e;
-      text-decoration: none;
-      font-family: "Open Sans", sans-serif;
-    }
-
-    .cd-container img {
-      max-width: 100%;
-    }
-
-    .cd-container h1, .cd-container h2 {
-      font-family: "Open Sans", sans-serif;
-      font-weight: bold;
-    }
+.cd-container h1, .cd-container h2 {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+}
 
 /* --------------------------------
 
@@ -770,18 +819,28 @@ Modules - reusable parts of our design
   line-height: 0;
 }
 
-.post-tags {
-  text-align: center;
-  line-height: 35px;
+.post-metadata {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.6em;
 }
 
-.post-tags a {
-  font-size: 14.5px;
-  padding: 2px 13px;
-  border: none;
+.post-category {
+  font-size: 14px;
+  padding: 0px 8px;
   background-color: #4CAF50;
-  border-radius: 50px;
+  border-radius: 0.5em;
   color: #fff;
+  height: 1.8em;
+  margin-right: 5px;
+  margin-top: -3px;
+}
+
+.post-date{
+  color: #939aa1;
+  letter-spacing: 1px;
+  margin: 0px;
+  flex-grow: 1;
 }
 
 .pagination a, .pagination span {

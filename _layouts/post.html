@@ -5,38 +5,22 @@ layout: default
 <article class="post detailed">
   <h1>{{ page.title }}</h1>
 
-  <div>
-    <p class="author_title">{{site.author}}  ·  {{ page.date | date: "%B %e, %Y" }}</p>
-    {% if page.last_modified_at %}
-    <p class="author_title" datetime="{{ page.last_modified_at | date_to_xmlschema }}">(Updated: {{ page.last_modified_at | date: "%b %-d, %Y" }})</p>
-    {% endif %}
-    <div class="post-tags">
-      {% if post %}
-      {% assign categories = post.categories %}
-      {% else %}
-      {% assign categories = page.categories %}
-      {% endif %}
-      {% for category in categories %}
-      <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
-      {% unless forloop.last %}&nbsp;{% endunless %}
-      {% endfor %}
-    </div>
+  <div class="post-metadata">
+    <p class="post-date">{{ page.date | date: "%-d %B, %Y" }}</p>
+      {% for category in page.categories %}
+    <a href="{{site.baseurl}}/categories?active={{ category | cgi_escape }}" class="post-category">{{category}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
   </div>
 
   <div class="entry">
     {{ content }}
     <br>
-    <b>Thanks for reading</b>, if you have any questions or comments, please use the contact button at the bottom of the page to get in touch.<br>
+    Thanks for reading, if you have any questions or comments, please use the contact button at the bottom of the page to get in touch! ☀️<br>
     <br>
     Tim
   </div>
 
-  <div>
-    <p><span class="share-box">Share this post:</span> <a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a></p>
-  </div>
-
-  <!--<div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
-  </div>-->
-
+  <br>
+  <b>Share this post: </b><a href="http://twitter.com/share?text={{ page.title }}&url={{site.url}}{{page.url}}" target="_blank">Twitter</a>, <a href="https://www.facebook.com/sharer.php?u={{site.url}}{{page.url}}" target="_blank">Facebook</a>
 </article>

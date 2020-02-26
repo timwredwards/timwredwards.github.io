@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "A History of iOS UI Architectures"
-categories: []
+categories: [Foo, Bar]
 excerpt_separator: <!--more-->
 ---
 
@@ -9,7 +9,7 @@ System architecture design in mobile app development in the modern age is crucia
 
 <!--more-->
 
-With the advent of Apple's SwiftUI and Combine reactive programming framework, thsi is only becoming more true. Reactive programming is a totally new paradigm to the way we write apps traditionally (imperitive programming).
+With the advent of Apple's SwiftUI and Combine reactive programming framework, this is only becoming more true. Reactive programming is a totally new paradigm to the way we write apps traditionally (imperative programming).
 
 System architecture design is a complicated topic, and not something I could cover in one post, however a large part of the complexity in iOS apps particularly, is in UI code. Because of the highly dynamic nature of user interfaces, including touch events, notifications, animations, and synchronising model data, UI code can often get extremely messy within iOS apps, and so a slew of design patterns have cropped up to help us organise this complexity.
 
@@ -19,6 +19,8 @@ https://en.wikipedia.org/wiki/SOLID
 https://www.oreilly.com/library/view/clean-architecture-a/9780134494272/
 
 For now, I will simply outline the existing UI design patterns, the problem they all aim to solve, and their advantages & disadvantages:
+
+# PART TWO: HISTORY
 
 # MVC
 
@@ -31,7 +33,13 @@ EXPLAIN AND DIAGRAM
 
 This worked well for a long time, as apps back then were fairly simple in their functional scope, but as the iOS ecosystem grew, apps became more complex, introducing new features like remote notifications, intricate 60fps animations, and new hardware capabilities. This exponentially increased the systematic complexity of mobile apps, to the point where MVC was became unsuitable. For this level of scope, alternatives were needed.
 
-Because of the growing complexity of iOS codebases, engineers were looking for ways of increasing the robustness of their code, and catching regressions when before they got into a production environment. This is when unit-testing and TDD started becoming popular tools for iOS engineers, enforcing their code worked as it should. The problem is, the way Apple implemented MVC is not well suited to 
+Because of the growing complexity of iOS codebases, engineers were looking for ways of increasing the robustness of their code, and catching regressions when before they got into a production environment. This is when unit-testing and TDD started becoming popular tools for iOS engineers, enforcing their code worked as it should.
+
+This is where problems started to arise, as the way Apple had implemented MVC had tightly coupled the View and the View Controller, meaning it was almost impossible to test presentation logic, as the only way of mocking the view was to subclass the view itself, and all child view classes. It also meant it was impossible to use newer UI technologies such as storyboards.
+
+Another issue was what I like to call "kitchen-sink syndrome" - because there is no formal structure in MVC of where to place functionality, everything seems to get dumped in the ViewController, from API calls to business logic to presentation logic. This eventually means the ViewController grows in size to a point where it eventually becomes unwieldily to parse or change without introducing risk. This is known in the wider world as "massive view controller", and a lot of the other architectures explained in this article aim to mitigate this exact problem.
+
+It should be noted that although MVC itself suffers from a lack of formal architecture and a bad reputation, this does not mean it's a bad pattern - merely misunderstood. MVC is a mindset that should be applied not just on the UI layer, but all the way through the iOS application. This is done by extracting business logic from ViewControllers and creating dedicated "Controller" objects for your model. From here, using ViewControllers in MVC becomes a lot easier. To break down ViewControllers further, you can also use multiple child view controllers on one screen, or extract code into UIView subclasses; over the years, Apple has provided us a lot of tools to use MVC effectively, and in the right hands, it can be as powerful and robust as any other architectural pattern.
 
 Advantages
 - arguably the most simple architecture to understand, and what most beginners use by dumping everything in the view controller
@@ -42,7 +50,9 @@ Disadvantages
 - Tightly couples UI and business logic, doesn't scale well in complex apps.
 - Hard as shit to unit test as it's hard to mock UI elements.
 
-A lot of people shit on MVC, but can still be used today if done properly.
+A lot of people shit on MVC, but can still be used today if done properly with a lot of architectural knowledge.
+
+Bad for teams bc everyone needs to know their shit.
 
 If you extract a lot of your business logic into a service layer, and your VC is simple, it's much easier to handle.
 

@@ -47,8 +47,7 @@ This basically means that we formally state, using high-level terminology, how e
 
 For example, say we have a screen that asks the user for signup information, it might look something like this:
 
-![Bad design skills](/images/behaviour-driven-development/app.png){:width="300"}
-##### A simple sign-up screen
+{% include figure.html src="/images/behaviour-driven-development/app.png" width="50%" caption="A simple sign-up screen" %}
 
 You could imagine there would be some interesting behaviours in this screen:
 

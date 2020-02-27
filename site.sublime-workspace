@@ -295,6 +295,9 @@
 	"file_history":
 	[
 		"/Users/Tim/dev/timwredwards.github.io/assets/style.scss",
+		"/Users/Tim/dev/timwredwards.github.io/_posts/2020-02-18-continuous-integration.md",
+		"/Users/Tim/dev/timwredwards.github.io/_posts/2020-02-19-behaviour-driven-development.md",
+		"/Users/Tim/dev/timwredwards.github.io/_includes/figure.html",
 		"/Users/Tim/dev/timwredwards.github.io/_layouts/post.html",
 		"/Users/Tim/dev/timwredwards.github.io/index.html",
 		"/Users/Tim/dev/timwredwards.github.io/assets/search.json",
@@ -418,14 +421,11 @@
 		"/Users/Tim/Downloads/Sandwich.app/Contents/Info.plist",
 		"/Users/Tim/dev/Flycut/.git/config",
 		"/Users/Tim/dev/iOS/.gitignore",
-		"/Users/Tim/dev/iOS/fastlane/Matchfile",
-		"/Users/Tim/dev/iOS/.circleci/config.yml",
-		"/Users/Tim/dev/iOS/.swiftlint.yml",
-		"/Users/Tim/Library/Application Support/SketchUp 2018/liclog.txt"
+		"/Users/Tim/dev/iOS/fastlane/Matchfile"
 	],
 	"find":
 	{
-		"height": 39.0
+		"height": 26.0
 	},
 	"find_in_files":
 	{
@@ -440,6 +440,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
 			"span",
 			"text-align: left",
 			"category",
@@ -569,7 +570,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 230.0,
+	"side_bar_width": 268.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

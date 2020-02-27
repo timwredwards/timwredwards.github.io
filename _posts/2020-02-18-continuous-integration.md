@@ -7,7 +7,7 @@ excerpt_separator: <!--more-->
 
 Continuous integration (CI) is defined as:
 
->  "a development practice where developers integrate code into a shared repository frequently, preferably several times a day. Each integration can then be verified by an automated build and automated tests." - [codeship.com](https://codeship.com/continuous-integration-essentials){:target="_blank"}
+>  "A development practice where developers integrate code into a shared repository frequently, preferably several times a day. Each integration can then be verified by an automated build and automated tests." - [codeship.com](https://codeship.com/continuous-integration-essentials){:target="_blank"}
 
 <!--more-->
 

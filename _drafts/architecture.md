@@ -134,5 +134,5 @@ Disadvantages
 Again, stick to solid principles
 Future is exciting
 
+{% include image.html src="/images/architecture/diagram.png" width="80%" class="dark-mode-invert" %}
 
-![Bad design skills](/images/diagram.png){:width="" class="dark-mode-invert"}

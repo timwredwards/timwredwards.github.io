@@ -7,18 +7,22 @@ permalink: /cv/
 
 <div class="header">
 
-<img src="https://avatars0.githubusercontent.com/u/10256125">
+<a class="image" href="https://www.timedwards.blog" target=_blank>
+	<img src="https://avatars0.githubusercontent.com/u/10256125">
+</a>
 
-<div class="titles" markdown="1">
-# Tim Edwards
-## iOS Software Engineer
+<div class="titles">
+<a href="https://www.timedwards.blog" target=_blank>
+<h1>Tim Edwards</h1>
+</a>
+<h2>iOS Software Engineer</h2>
 </div>
 
-<div class="contact-info" markdown="1">
-- @gmail.com
-- github.com/timwredwards
-- linkedin.com/in/timwredwards
-</div>
+<ul class="contact-info">
+<a href="https://www.timedwards.blog" target=_blank><li>@gmail.com</li></a>
+<a href="https://github.com/timwredwards" target=_blank><li>github.com/timwredwards</li></a>
+<a href="https://www.linkedin.com/in/timwredwards" target=_blank><li>linkedin.com/in/timwredwards</li></a>
+</ul>
 
 </div>
 

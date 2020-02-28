@@ -253,6 +253,10 @@ a {
   cursor: pointer;
   &:hover, &:active {
     opacity: 0.75;
+
+    * {
+      opacity: 0.75;
+    }
   }
 }
 

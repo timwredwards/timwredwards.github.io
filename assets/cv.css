@@ -1,5 +1,13 @@
-
 /* global */
+
+a {
+	color: inherit;
+}
+
+html {
+	zoom: 1.2;
+}
+
 h1 {
 	margin: 0;
 }
@@ -28,19 +36,24 @@ p, li {
 	align-items: center;
 }
 
-.header img {
+.header .image {
 	width: 15%;
+	line-height: 0;
+}
+
+.header .image img {
 	border-radius: 100%
 }
 
 .header .titles {
 	flex-grow: 1;
-	padding-left: 20px;
+	padding-left: 15px;
 }
 
 .header .titles h1 {
 	font-size: 2em;
 	margin: 0;
+	font-weight: 300;
 }
 
 .header .titles h2 {
@@ -49,7 +62,7 @@ p, li {
 	font-weight: normal;
 }
 
-.header .contact-info li:first-child:before {
+.header .contact-info a:first-child li:before {
 	content: "timwredwards";
 }
 
@@ -91,4 +104,19 @@ h3 {
 
 .activity .details:last-child p:first-child {
 	flex-grow: 1;
+}
+
+/* printing */
+@media only print {
+	html {
+		zoom: 1.0;
+	}
+
+	.header {
+		margin-top: 0;
+	}
+
+	.wrapper-main {
+		padding: 0;
+	}
 }

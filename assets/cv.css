@@ -101,6 +101,11 @@ p, li {
 	display: flex;
 }
 
+
+.skills .section {
+	flex-grow: 1;
+}
+
 .skills .section * {
 	margin: 0;
 }

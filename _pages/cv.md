@@ -46,36 +46,36 @@ A talented engineer with over 5 years industry experience delivering robust and 
 <!-- SKILLS  -->
 <div class="skills">
 <div class="section" markdown="1">
+**Skills & Specialities**
+- Unit-testing & behaviour-driven software development
+- System architecture design & patterns: MVVM, VIPER etc.
+- UI development with UIKit, CoreAnimation & SwiftUI
+- Agile development practises and team management
+- Continous integration & deployment using Fastlane
+- Reactive programming paradigms with RxSwift & Combine
+- Product & UX design with Sketch and Atlassian suite
+</div>
+
+<div class="section" markdown="1">
 **Languages**
 - Swift (5y)
 - Obj-C (8y)
+- Bash & Zsh
 - Ruby
-- Bash
+- Javascript
 - Assembly
 - Markdown
-- Javascript
 </div>
 
 <div class="section" markdown="1">
-**Favourite tools**
+**Tools & Software**
 - Xcode & Instruments
 - Git & Fastlane
 - Cocoapods & SPM
-- LLDB & Hopper
-- TDD and BDD
-- Sublime Text & iTerm
+- iTerm & Sublime Text
+- LLDB & Hopper decompiler
 - Zeplin & Sketch
-</div>
-
-<div class="section" markdown="1">
-**Skills & Specialities**
-- Unit-testing & Behavioural driven software development
-- System architecture design and design patterns
-- Agile development practises and people management
-- Reactive programming paradigms with RxSwift & Combine
-- Continous Integration & deployment scripting using Fastlane
-- UI development with UIKit, CoreAnimation & SwiftUI
-- Product & UX design with Sketch and Atlassian suite
+- Jira & Slack
 </div>
 </div>
 

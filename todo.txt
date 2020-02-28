@@ -1,20 +1,19 @@
-Icons
-
-Intro needs to include accomplishments and what you want next
-
-What sets me apart?
-Scaling
-Architecture
-Soft skills
-
-Make company intro for each listing short.
-
-List achivements for jobs
-
 Portfolio on website?
 
+INTRO
+Needs to be super punchy and have acomplisment list
+Needs to include accomplishments and what you want next?
 
+What sets me apart?
+	Scaling
+	Architecture
+	Soft skills
 
+ACTIVITY
+Write Hibooks
+Make company intro for each listing short.
+
+List achivements for each job
 
 GET THESE INTO THE PARAGRAPHS:
 UIKit, CoreAnimation & Texture
@@ -23,5 +22,3 @@ MVC, MVVM, VIPER & RxSwift
 Crash reporting, AB testing & logs
 APNS, WatchKit & Core Location
 AVFoundation, Core Audio & HLS
-
-

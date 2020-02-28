@@ -1,5 +1,72 @@
+
+/* global */
+h1 {
+	margin: 0;
+}
+
 .wrapper-masthead,
 .wrapper-footer {
 	display: none;
 }
 
+.wrapper-main {
+	padding: 0 0 10px 0;
+}
+
+p, li {
+	font-size: 13px;
+}
+
+.container {
+	max-width: 19cm;
+}
+
+/* header */
+.header {
+	margin-top: 20px;
+	display: flex;
+	align-items: center;
+}
+
+.header img {
+	width: 15%;
+	border-radius: 100%
+}
+
+.header .titles {
+	flex-grow: 1;
+	padding-left: 20px;
+}
+
+.header .titles h1 {
+	font-size: 2em;
+	margin: 0;
+}
+
+.header .titles h2 {
+	font-size: 1em;
+	margin: 0;
+	font-weight: normal;
+}
+
+/* skills */
+.skills {
+	display: flex;
+}
+
+.skills .section * {
+	margin: 0;
+}
+
+.activity .details {
+	display: flex;
+}
+
+.activity .details * {
+	margin: 0;
+}
+
+.activity .details blockquote {
+	font-style: italic;
+	flex-grow: 1;
+}

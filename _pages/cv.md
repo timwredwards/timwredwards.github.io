@@ -5,6 +5,7 @@ permalink: /cv/
 
 <link rel="stylesheet" href="/assets/cv.css">
 
+<!-- HEADER -->
 <div class="header">
 
 <a class="image" href="https://www.timedwards.blog" target=_blank>
@@ -18,69 +19,81 @@ permalink: /cv/
 <h2>iOS Software Engineer</h2>
 </div>
 
-<ul class="contact-info">
-<a href="https://www.timedwards.blog" target=_blank><li>@gmail.com</li></a>
-<a href="https://github.com/timwredwards" target=_blank><li>github.com/timwredwards</li></a>
-<a href="https://www.linkedin.com/in/timwredwards" target=_blank><li>linkedin.com/in/timwredwards</li></a>
-</ul>
+<div class="contact">
+<a class="website" href="https://www.timedwards.blog" target=_blank>
+	<img src="/images/website.svg">
+	<p>timedwards.blog</p>
+</a>
+<a class="email" href="https://www.timedwards.blog/contact" target=_blank>
+	<img src="/images/email.svg">
+	<p>@gmail.com</p>
+</a>
+<a class="github" href="https://github.com/timwredwards" target=_blank>
+	<img src="/images/github.svg">
+	<p>github.com/timwredwards</p>
+</a>
+<a class="linkedin" href="https://www.linkedin.com/in/timwredwards" target=_blank>
+	<img src="/images/linkedin.svg">
+	<p>linkedin.com/in/timwredwards</p>
+</a>
+</div>
 
 </div>
 
+<!-- BIO -->
 A talented engineer with over 5 years industry experience delivering robust and extensible apps. As a Swift user from day zero, I understand SOLID principles within iOS, and how tools such as test-driven development, agile-methodologies and architectural design can mitigate bugs, improve code quality and make your app a success.
 
+<!-- SKILLS  -->
 <div class="skills">
 <div class="section" markdown="1">
 **Languages**
-- Swift
-- Obj-C
+- Swift (5y)
+- Obj-C (8y)
 - Ruby
 - Bash
 - Assembly
-- English
+- Markdown
+- Javascript
 </div>
 
 <div class="section" markdown="1">
-**Skills & Interests**
-- Test-driven development
-- System architecture design
-- Scripting, CI and automation
-- Agile development practises
-- Team and project management
-- Product design and UX
-</div>
-
-<div class="section" markdown="1">
-**Frameworks & Technologies**
-- UIKit, CoreAnimation & Texture
-- Realm, CoreData & SQLite
-- MVC, MVVM, VIPER & RxSwift
-- Crash reporting, AB testing & logs
-- APNS, WatchKit & Core Location
-- AVFoundation, Core Audio & HLS
-</div>
-
-<div class="section" markdown="1">
-**Software & Tools**
+**Favourite tools**
 - Xcode & Instruments
+- Git & Fastlane
+- Cocoapods & SPM
 - LLDB & Hopper
-- Git, Jira & Slack
-- Sketch & Zeplin
-- CocoaPods & Carthage
-- Fastlane
+- TDD and BDD
+- Sublime Text & iTerm
+- Zeplin & Sketch
+</div>
+
+<div class="section" markdown="1">
+**Skills & Specialities**
+- Unit-testing & Behavioural driven software development
+- System architecture design and design patterns
+- Agile development practises and people management
+- Reactive programming paradigms with RxSwift & Combine
+- Continous Integration & deployment scripting using Fastlane
+- UI development with UIKit, CoreAnimation & SwiftUI
+- Product & UX design with Sketch and Atlassian suite
 </div>
 </div>
 
+<!-- HIBOOKS -->
 <div class="activity" markdown="1">
+
+<div class="title" markdown="1">
 ### Hibooks
-<div class="details" markdown="1">
-
-> "The club for audiobook lovers"
-
-**Berlin, Germany • May 2019 - December 2019**
+> &nbsp;\- "The Club For Audiobook Lovers"
 </div>
+
+<div class="details" markdown="1">
+#### Senior iOS Engineer
+##### Berlin, Germany • May 2019 - December 2019
+</div>
+---
 
 Todoist is a task manager and collaboration tool for mobile and web platforms, with millions of users and over 1 billion tasks completed to date. I briefly worked as a remote contractor on the iOS project, where I successfully:
-
 - worked on keychain and authentication
 - UI updates
 - bug fixes etc.
@@ -90,13 +103,19 @@ Todoist is a task manager and collaboration tool for mobile and web platforms, w
 
 </div>
 
+<!-- TODOIST -->
 <div class="activity" markdown="1">
-### Todoist
-<div class="details" markdown="1">
-> "Organise life, then go enjoy it"
 
-**Remote • October 2018 - February 2019**
+<div class="title" markdown="1">
+### Todoist
+> &nbsp;\- "Organise Life, Then Go Enjoy It"
 </div>
+
+<div class="details" markdown="1">
+#### iOS Contractor
+##### Remote • October 2018 - February 2019
+</div>
+---
 
 Todoist is a task manager and collaboration tool for mobile and web platforms, with millions of users and over 1 billion tasks completed to date. I briefly worked as a remote contractor on the iOS project, where I successfully:
 - Undertook an architectural research project, including the introduction of a new SQLite-based persistence layer.
@@ -105,13 +124,20 @@ Todoist is a task manager and collaboration tool for mobile and web platforms, w
 
 </div>
 
+<!-- DEPOP -->
 <div class="activity" markdown="1">
-### Depop
-<div class="details" markdown="1">
-> "The creative community's mobile marketplace"
 
-**London, UK • July 2017 - February 2018**
+<div class="title" markdown="1">
+### Depop
+> &nbsp;\- "The Creative Community's Mobile Marketplace"
 </div>
+
+<div class="details" markdown="1">
+#### Senior iOS Engineer
+##### London, UK • July 2017 - February 2018
+</div>
+---
+
 Depop is a community-driven marketplace with over 8 million registered users, and a mobile-first strategy with over 75% of sales coming from iOS users alone. This means extreme emphasis is placed on keeping crash-rates low, and providing a top-quality experience for the end user. I worked as a Senior Engineer at Depop and successfully:
 - Developed the user video feature, including the capture, post-processing, upload and consumption of all video content in the app. This feature was released stable and on time, providing a lot of value for our users.
 - Refactored many legacy Objective-C classes to Swift VIPER modules, using TDD to mitigate regressions.
@@ -120,25 +146,47 @@ Depop is a community-driven marketplace with over 8 million registered users, an
 
 </div>
 
+
+<!-- COCOON -->
 <div class="activity" markdown="1">
+
+<div class="title" markdown="1">
 ### Cocoon
+> &nbsp;\- "Smart-Home Security Without the Hassle"
+</div>
+
 <div class="details" markdown="1">
-> "Home security without the hassle"
-
-**Leeds, UK • February 2016 - July 2017**
+#### iOS Engineer
+##### Leeds, UK • February 2016 - July 2017
 </div>
 
-Cocoon designed home-security hardware and mobile apps to alert users. As one of two members of the iOS team I:
-- Retroactively implemented unit-testing, facilitating the safe introduction of new features including Core Location services, remote logging, APNS, and the beginning of a refactor from the legacy Objective-C codebase to Swift.
-- Integrated an HTTP live video streaming client using libVLC, which was applauded for its quick performance.
-- Modernised the continuous integration system to utilise Fastlane and Travis CI, for auto-deployment to Testflight.
 </div>
 
+<!-- TSM -->
 <div class="activity" markdown="1">
-### University of York
-<div class="details" markdown="1">
-2:1 (Hons) BSc - Music Technology - Dept. of Electronic Engineering
 
-**York, UK • September 2011 - June 2014**
+<div class="title" markdown="1">
+### TopScreenMedia
+> &nbsp;\- "Creative Media Solutions For Advertisers"
 </div>
+
+<div class="details" markdown="1">
+#### iOS Engineer
+##### Leeds, UK • May 2014 - Feb 2016
+</div>
+
+</div>
+
+<!-- UNI -->
+<div class="activity" markdown="1">
+
+<div class="title" markdown="1">
+### University of York
+</div>
+
+<div class="details" markdown="1">
+#### Music Technology & Electronic Engineering BSc (Hons) 2.1
+##### York, UK • September 2011 - June 2014
+</div>
+
 </div>

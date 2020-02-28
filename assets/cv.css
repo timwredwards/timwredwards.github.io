@@ -37,7 +37,8 @@ p, li {
 }
 
 .header .image {
-	width: 15%;
+	width: 100px;
+	height: 100px;
 	line-height: 0;
 }
 
@@ -59,10 +60,39 @@ p, li {
 .header .titles h2 {
 	font-size: 1em;
 	margin: 0;
-	font-weight: normal;
+	font-weight: 300;
+	letter-spacing: 0.5px;
 }
 
-.header .contact-info a:first-child li:before {
+.header .contact {
+	margin: 0;
+}
+
+.header .contact a {
+	display: flex;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.header .contact a * {
+	margin: 0;
+}
+
+.header .contact img {
+	width: 18px;
+	height: 18px;
+	border-radius: 1000px;
+	margin-right: 6px;
+	overflow: hidden;
+}
+
+@media (prefers-color-scheme: dark) {
+	.header .contact img {
+		filter: invert(100%);
+	}
+}
+
+.header .contact .email p:before {
 	content: "timwredwards";
 }
 
@@ -77,36 +107,62 @@ p, li {
 
 /* activity */
 
-h3:first-child {
+.activity hr {
+	opacity: 0.4;
 	margin-top: 0;
+	margin-bottom: 5px;
 }
 
-h3 {
+.activity .title {
+	display: flex;
+	align-items: baseline;
+}
+
+.activity .title * {
+	margin: 0;
+}
+
+.activity .title h3 {
+	margin-top: 10px;
 	margin-bottom: 0;
 }
 
-.activity p {
-	margin-top: 5px;
+.activity .title blockquote {
+	font-style: italic;
+	font-weight: 300;
+	margin-left: 2px;
 }
 
 .activity .details {
 	display: flex;
+	align-items: baseline;
 }
 
 .activity .details * {
 	margin: 0;
 }
 
-.activity .details blockquote {
-	font-style: italic;
+.activity .details h4 {
 	flex-grow: 1;
 }
 
-.activity .details:last-child p:first-child {
-	flex-grow: 1;
+.activity .details h4, h5 {
+	font-size: 13px;
+	font-weight: normal;
+	letter-spacing: 0.5px;
+}
+
+.activity p {
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+
+.activity ul {
+	margin: 5px 0;
 }
 
 /* printing */
+
 @media only print {
 	html {
 		zoom: 1.0;
@@ -120,3 +176,4 @@ h3 {
 		padding: 0;
 	}
 }
+

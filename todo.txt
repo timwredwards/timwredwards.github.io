@@ -1,4 +1,4 @@
-Portfolio on website?
+Fix mobile
 
 INTRO
 Needs to be super punchy and have acomplisment list
@@ -9,6 +9,10 @@ What sets me apart?
 	Architecture
 	Soft skills
 
+SKILLS
+Replace one of the above with some more managementy stuff. Can combine some of them.
+Add documentation writing
+
 ACTIVITY
 Write Hibooks
 Make company intro for each listing short.
@@ -18,7 +22,8 @@ List achivements for each job
 GET THESE INTO THE PARAGRAPHS:
 UIKit, CoreAnimation & Texture
 Realm, CoreData & SQLite
-MVC, MVVM, VIPER & RxSwift
 Crash reporting, AB testing & logs
 APNS, WatchKit & Core Location
 AVFoundation, Core Audio & HLS
+
+Go through power words

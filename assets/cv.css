@@ -5,7 +5,7 @@ a {
 }
 
 html {
-	zoom: 1.2;
+	zoom: 1.4;
 }
 
 h1 {
@@ -22,7 +22,13 @@ h1 {
 }
 
 p, li {
-	font-size: 13px;
+	font-size: 11px;
+}
+
+@media (prefers-color-scheme: light) {
+	p, li {
+		color: black;
+	}
 }
 
 .container {
@@ -37,8 +43,8 @@ p, li {
 }
 
 .header .image {
-	width: 100px;
-	height: 100px;
+	width: 80px;
+	height: 80px;
 	line-height: 0;
 }
 
@@ -48,20 +54,20 @@ p, li {
 
 .header .titles {
 	flex-grow: 1;
-	padding-left: 15px;
+	padding-left: 10px;
 }
 
 .header .titles h1 {
-	font-size: 2em;
+	font-size: 1.5em;
 	margin: 0;
 	font-weight: 300;
 }
 
 .header .titles h2 {
-	font-size: 1em;
+	font-size: 0.8em;
 	margin: 0;
 	font-weight: 300;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.3px;
 }
 
 .header .contact {
@@ -96,6 +102,12 @@ p, li {
 	content: "timwredwards";
 }
 
+/* bio */
+
+.bio {
+	margin: 8px 0 8px 0;
+}
+
 /* skills */
 .skills {
 	display: flex;
@@ -112,32 +124,6 @@ p, li {
 
 /* activity */
 
-.activity hr {
-	opacity: 0.4;
-	margin-top: 0;
-	margin-bottom: 5px;
-}
-
-.activity .title {
-	display: flex;
-	align-items: baseline;
-}
-
-.activity .title * {
-	margin: 0;
-}
-
-.activity .title h3 {
-	margin-top: 10px;
-	margin-bottom: 0;
-}
-
-.activity .title blockquote {
-	font-style: italic;
-	font-weight: 300;
-	margin-left: 2px;
-}
-
 .activity .details {
 	display: flex;
 	align-items: baseline;
@@ -147,6 +133,12 @@ p, li {
 	margin: 0;
 }
 
+.activity .details h3 {
+	margin-top: 15px;
+	margin-bottom: 0;
+	line-height: 50%;
+}
+
 .activity .details h4 {
 	flex-grow: 1;
 }
@@ -154,7 +146,13 @@ p, li {
 .activity .details h4, h5 {
 	font-size: 13px;
 	font-weight: normal;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.3px;
+}
+
+.activity hr {
+	opacity: 0.4;
+	margin-top: 0;
+	margin-bottom: 5px;
 }
 
 .activity p {

@@ -39,6 +39,7 @@ p, li {
 .header {
 	margin-top: 20px;
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
 
@@ -111,6 +112,7 @@ p, li {
 /* skills */
 .skills {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 
@@ -126,6 +128,7 @@ p, li {
 
 .activity .details {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: baseline;
 }
 

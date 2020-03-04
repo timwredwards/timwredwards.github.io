@@ -17,12 +17,12 @@ h1 {
 	display: none;
 }
 
-.wrapper-main {
-	padding: 0 0 30px 0;
-}
-
 p, li {
 	font-size: 11px;
+}
+
+ul {
+	padding-left: 1em;
 }
 
 @media (prefers-color-scheme: light) {
@@ -35,9 +35,23 @@ p, li {
 	max-width: 710px;
 }
 
+/* pdf banner */
+
+.pdf-banner {
+	position: absolute;
+	height: 30px;
+	line-height: 30px;
+	background-color: #4183C4;
+	text-align: center;
+	left: 0;
+	top: -60px;
+	right: 0;
+	color: #ddd;
+}
+
 /* header */
 .header {
-	margin-top: 20px;
+	margin-top: 60px;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -115,6 +129,15 @@ p, li {
 	flex-wrap: wrap;
 }
 
+.skills .section:first-of-type ul {
+	list-style: none;
+	padding: 0 0 0 0.1em;
+}
+
+.skills .section:first-of-type li:before {
+	content: '✓';
+	margin-right: 4px;
+}
 
 .skills .section {
 	flex-grow: 1;
@@ -159,8 +182,7 @@ p, li {
 }
 
 .activity p {
-	margin-top: 5px;
-	margin-bottom: 0;
+	margin: 0;
 }
 
 .activity ul {
@@ -174,12 +196,11 @@ p, li {
 		zoom: 1.0;
 	}
 
-	.header {
-		margin-top: 0;
+	.pdf-banner {
+		display: none;
 	}
 
-	.wrapper-main {
-		padding: 0;
+	.header {
+		margin: 0;
 	}
 }
-

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sharing Knowledge with Behaviour Driven Development"
+title:  "Knowledge Transfer through Behaviour Driven Development"
 categories: [Company Culture, Testing]
 excerpt_separator: <!--more-->
 ---

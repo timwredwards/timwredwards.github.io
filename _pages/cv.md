@@ -83,7 +83,7 @@ permalink: /cv/
 <div class="details">
 <h3>Hibooks</h3>
 <h4>&nbsp;• Senior iOS Engineer</h4>
-<h5>Berlin, Germany • May 2019 - December 2019</h5>
+<h5>Berlin, Germany • June 2019 - December 2019</h5>
 </div>
 ---
 

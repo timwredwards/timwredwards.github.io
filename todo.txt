@@ -1,29 +1,3 @@
-Fix mobile
+About page
 
-INTRO
-Needs to be super punchy and have acomplisment list
-Needs to include accomplishments and what you want next?
-
-What sets me apart?
-	Scaling
-	Architecture
-	Soft skills
-
-SKILLS
-Replace one of the above with some more managementy stuff. Can combine some of them.
-Add documentation writing
-
-ACTIVITY
-Write Hibooks
-Make company intro for each listing short.
-
-List achivements for each job
-
-GET THESE INTO THE PARAGRAPHS:
-UIKit, CoreAnimation & Texture
-Realm, CoreData & SQLite
-Crash reporting, AB testing & logs
-APNS, WatchKit & Core Location
-AVFoundation, Core Audio & HLS
-
-Go through power words
+Write new post

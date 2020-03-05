@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Using Behaviour Driven Development (BDD) to Share Knowledge Across Engineering Teams"
+title:  "Sharing Knowledge with Behaviour Driven Development"
 categories: [Company Culture, Testing]
 excerpt_separator: <!--more-->
 ---

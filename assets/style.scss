@@ -778,6 +778,7 @@ Modules - reusable parts of our design
   display: flex;
   align-items: center;
   margin-bottom: 1.6em;
+  flex-wrap: wrap;
 }
 
 .post-category {
@@ -796,6 +797,13 @@ Modules - reusable parts of our design
   letter-spacing: 1px;
   margin: 0px;
   flex-grow: 1;
+}
+
+@media (max-width: 820px) {
+  .post-date {
+    width: 100%;
+    margin-bottom: 15px;
+  }
 }
 
 .pagination a, .pagination span {

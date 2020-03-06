@@ -9,7 +9,7 @@ layout: default
       <h1>{{ post.title }}</h1>
     </a>
     <div class="post-metadata">
-      <p class="post-date">{{ post.date | date: "%-d %B, %Y" }}</p>
+      <p class="post-date">{{ post.date | date: "%A %-d %B, %Y" }}</p>
       {% for category in post.categories %}
       <a href="{{site.baseurl}}/categories?active={{ category | cgi_escape }}" class="post-category">{{category}}</a>
       {% unless forloop.last %}&nbsp;{% endunless %}

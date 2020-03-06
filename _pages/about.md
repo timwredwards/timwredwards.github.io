@@ -4,13 +4,15 @@ title: About Me
 permalink: /about/
 ---
 
-I'm Tim, an iOS Engineer from the UK.
+<a href="/images/portrait.jpeg" target="_blank"><img src="/images/portrait.jpeg"></a>
 
-I've been making iOS apps since 2012, when I first learned Objective-C at university.
+Hello! I'm Tim, an iOS Engineer from the UK.
 
-Since then, I've worked with a myriad of companies in both the UK and internationally, and had the opportunity to develop apps supporting millions of users.
+I've been making apps since 2012, when I first learned Objective-C at university.
 
-Over the years, I've gained the skills and experience to analyse existing codebases, understand their pain-points and design & develop actionable plans for improvement, as well as develop those plans to fruition.
+Since then, I've worked with a myriad of companies in both the UK and internationally and had the opportunity to develop apps supporting millions of users.
+
+Over the years, I've gained the skills and experience to critically analyse existing codebases, understand their pain-points and design & develop actionable plans for improvement.
 
 I understand SOLID principles within the iOS ecosystem, and how test-driven development, intelligent system architecture, and agile-methodologies can mitigate bugs, improve code quality and make your app a success.
 

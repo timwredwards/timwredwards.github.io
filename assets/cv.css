@@ -8,10 +8,6 @@ html {
 	zoom: 1.4;
 }
 
-h1 {
-	margin: 0;
-}
-
 .wrapper-masthead,
 .wrapper-footer {
 	display: none;
@@ -74,8 +70,8 @@ ul {
 
 .header .titles h1 {
 	font-size: 1.5em;
-	margin: 0;
 	font-weight: 300;
+	margin: 0 !important;
 }
 
 .header .titles h2 {

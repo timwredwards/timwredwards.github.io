@@ -21,6 +21,10 @@ ul {
 	padding-left: 1em;
 }
 
+.page h1 {
+	margin: 0 !important;
+}
+
 @media (prefers-color-scheme: light) {
 	p, li {
 		color: black;
@@ -72,6 +76,7 @@ ul {
 	font-size: 1.5em;
 	font-weight: 300;
 	margin: 0 !important;
+	line-height: 1.2 !important;
 }
 
 .header .titles h2 {
@@ -197,6 +202,6 @@ ul {
 	}
 
 	.header {
-		margin: 0;
+		margin-top: 0px;
 	}
 }

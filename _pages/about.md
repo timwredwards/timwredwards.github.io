@@ -4,7 +4,7 @@ title: About Me
 permalink: /about/
 ---
 
-<img src="/images/nz.jpg"></a>
+<img src="/images/nz.jpg">
 
 Hello! I'm Tim, an iOS Engineer from the UK.
 

@@ -19,14 +19,14 @@ This is the first in my three-part attempt to document my principles, and how I 
 
 Software Engineering at its core is problem-solving. How it differs from more "academic" subjects such as Mathematics or Physics is the level of creativity involved in how those problems can be solved. In Software Engineering, each solution has advantages and disadvantages, and it's up to the engineer to decide which is the more appropriate route to take. No solution is more objectively "correct" than another (in most instances!) and context determines which solution is most effective in that environment.
 
-Software engineers communicate the merits and downsides of each solution using a set of shared principles, which have been tried-and-tested to improve the quality of software. A good example of those is [SOLID](https://en.wikipedia.org/wiki/SOLID){:target="_blank"}, which while slightly outdated due to it's strong links to object-oriented programming paradigms, are still useful in Swift development to create software which is modular, extensible and robust.
+Software engineers communicate the merits and downsides of each solution using a set of shared principles, which have been tried-and-tested to improve the quality of software. A good example of those are [SOLID](https://en.wikipedia.org/wiki/SOLID){:target="_blank"}, which while slightly outdated due to it's strong links to object-oriented programming paradigms, are still useful in Swift development to create software which is modular, extensible and robust.
 
 By having a codebase that is modularised and split into layers, the advantages are numerous:
 
 - It's easier for new engineers to parse the code and understand how the system fits together as a whole.
 - It's easier for existing engineers to know where to find a particular component or reference.
 - It's easier to unit test the codebase through proper dependency injection and mocking of components.
-- It's easier to extend functionality, as edits will touch less components than otherwise.
+- It's easier and safer to extend functionality, as edits will touch less components than otherwise.
 
 All of this means apps are easier to understand, extend and scale.
 
@@ -66,10 +66,10 @@ Creating high-quality software is all about feedback. The faster feedback is rec
 
 After a build is released, and users begin to update, you immediately start to get feedback in the form of crash reports and analytical data if you're using a CRM tool such as Leanplum or Localytics. This data can be used by the product owners of the company to make intelligent business and product decisions. The more often this happens, the more guided the company is by their users, and the higher your chances of success.
 
-Traditionally, application updates on most platforms were released when features were completed and bug fixes had been performed. In the current age of highly-complex multi-featured mobile applications, this has changed. Now, apps are often released on a strict rolling basis of 2-4 weeks, and features are enabled or disabled using an online flag system or A / B testing suite. This is often why you'll simply see "Bug fixes and improvements" in the release notes of some app updates - it's simply impossible for them to describe what's in that release because it's decoupled from the current feature specification.
+Traditionally, application updates on most platforms were released when features were completed and bug fixes had been performed. In the current age of highly-complex multi-featured mobile applications, this has changed. Now, apps are often released on a strict rolling basis of 2-4 weeks, and features are enabled or disabled using an online config or A / B testing suite. This is often why you'll simply see "Bug fixes and improvements" in the release notes of some app updates - it's simply impossible for them to describe what's in that release because it's decoupled from the current feature-set.
 
 ## Conclusion
 
 Hopefully, in this article I've provided some insight into my working style - iOS development is not simple by any means, but by utilising the ideas here, amongst others, it becomes easier to manage the level of complexity required by today's mobile applications.
 
-In the next part of this article, I will be focusing on a higher level of abstraction - discussing ideas at the team and company level, such as Agile methodologies, asynchronous communication and training.
+In the next part of this article, I will be focusing on a higher level of abstraction - discussing ideas at the team and company level, such as Agile methodologies, code health and mentorship.

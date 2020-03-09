@@ -9,7 +9,7 @@ Rejig these around:
 
 Positivity and kindness
 
-Learning and training
+Learning and Mentorship
 We are so privileged to be in this position
 We owe it to ourselves and society to keep learning, so we can give back to the community. Both as individuals and as a team.
 

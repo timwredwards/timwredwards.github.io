@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "My Top 15 Software Engineering Principles Part 1: Technical Concepts"
-categories: [Principles, Testing, Company Culture]
+title:  "My Top Software Engineering Principles - Part One: Technical Concepts"
+categories: [Testing, DevOps]
 excerpt_separator: <!--more-->
 ---
 
@@ -56,13 +56,13 @@ This separation of code into layered Frameworks is good practise anyway, and wil
 
 No code is written in a vacuum, and everything you write will affect your team, your company and your users. When creating software as part of an engineering team, it's crucial to be as synchronised as possible, to avoid miscommunication and blockers.
 
-Continuous Integration (CI) is a philosophy that encourages engineers to get their code merged into a primary branch of work as soon as possible. This primary branch is locked, and all code must go through a review from other engineers. It's so easy to make a mistake while programming that's only caught when someone else takes a look and enforcing reviews from other engineers means bugs are caught earlier and the quality of the software increases.
+[Continuous Integration](https://en.wikipedia.org/wiki/Continuous_integration){:target="_blank"} (CI) is a philosophy that encourages engineers to get their code merged into a primary branch of work as soon as possible. This primary branch is locked, and all code must go through a review from other engineers. It's so easy to make a mistake while programming that's only caught when someone else takes a look and enforcing reviews from other engineers means bugs are caught earlier and the quality of the software increases.
 
 This also has the advantage of giving everyone on the team exposure to each other's work, sparking high-level architectural discussions earlier and keeping everyone up to date.
 
 ## 5) Continous Deployment
 
-Creating high-quality software is all about feedback. The faster feedback is received by the company from users, the faster they can iterate about their user's needs and wants. This plays into the Agile methodology, but for now, I'm talking simply about deployment.
+Creating high-quality software is all about feedback. The faster feedback is received by the company from users, the faster they can iterate about their user's needs and wants. This plays into the Agile methodology, but for now, I'm talking simply about [continous deployment](https://en.wikipedia.org/wiki/Continuous_deployment).
 
 After a build is released, and users begin to update, you immediately start to get feedback in the form of crash reports and analytical data if you're using a CRM tool such as Leanplum or Localytics. This data can be used by the product owners of the company to make intelligent business and product decisions. The more often this happens, the more guided the company is by their users, and the higher your chances of success.
 
@@ -73,3 +73,5 @@ Traditionally, application updates on most platforms were released when features
 Hopefully, in this article I've provided some insight into my working style - iOS development is not simple by any means, but by utilising the ideas here, amongst others, it becomes easier to manage the level of complexity required by today's mobile applications.
 
 In the next part of this article, I will be focusing on a higher level of abstraction - discussing ideas at the team and company level, such as Agile methodologies, code health and mentorship.
+
+[Click here for part two](/principles-two)

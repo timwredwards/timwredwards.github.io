@@ -15,7 +15,7 @@ So it's not simple to create an app, especially one that scales well to millions
 
 This is the first in my three-part attempt to document my principles, and how I approach iOS projects, companies and the tech industry as a whole. It's a collection of concepts I believe are important in creating high-quality software, and without them, I would be quite lost.
 
-## 1) SOLID Principles
+## SOLID Principles
 
 Software Engineering at its core is problem-solving. How it differs from more "academic" subjects such as Mathematics or Physics is the level of creativity involved in how those problems can be solved. In Software Engineering, each solution has advantages and disadvantages, and it's up to the engineer to decide which is the more appropriate route to take. No solution is more objectively "correct" than another (in most instances!) and context determines which solution is most effective in that environment.
 
@@ -30,7 +30,7 @@ By having a codebase that is modularised and split into layers, the advantages a
 
 All of this means apps are easier to understand, extend and scale.
 
-## 2) Architecture Design and UI Patterns
+## Architecture Design and UI Patterns
 
 UI patterns are the formal application of architectural design theory to mobile applications. They are essentially structured blueprints of how to layout modules in a mobile application, most specifically on the UI layer.
 
@@ -42,7 +42,7 @@ Ultimately, while UI patterns can be useful, they are inherently subjective, and
 
 The one situation in which I'd say some kind of formalised UI pattern is necessary is when working as part of a larger team - it's essential to have a domain design language, and architecture is part of that. It doesn't matter which pattern it is, but there needs to be a shared understanding of what everyone is talking about when they are in the same room.
 
-## 3) Unit-Testing
+## Unit-Testing
 
 Developing robust software is hard - everything can be working fine on your machine, but fall apart when it's deployed to a production environment, causing crashes and ugly App-Store reviews, as well as losing you users and money. There's so much that can go wrong when developing software, it's important to have some kind of safeguard to give us a baseline level of confidence that the work we've submitted isn't liable to fail. That's where testing comes in.
 
@@ -52,7 +52,7 @@ I think there is a misconception in Software Engineering in general that 100% co
 
 This separation of code into layered Frameworks is good practise anyway, and will make your code easier to read, and more reusable across projects or even teams within a company!
 
-## 4) Continous Integration
+## Continous Integration
 
 No code is written in a vacuum, and everything you write will affect your team, your company and your users. When creating software as part of an engineering team, it's crucial to be as synchronised as possible, to avoid miscommunication and blockers.
 
@@ -60,7 +60,7 @@ No code is written in a vacuum, and everything you write will affect your team, 
 
 This also has the advantage of giving everyone on the team exposure to each other's work, sparking high-level architectural discussions earlier and keeping everyone up to date.
 
-## 5) Continous Deployment
+## Continous Deployment
 
 Creating high-quality software is all about feedback. The faster feedback is received by the company from users, the faster they can iterate about their user's needs and wants. This plays into the Agile methodology, but for now, I'm talking simply about [continous deployment](https://en.wikipedia.org/wiki/Continuous_deployment).
 

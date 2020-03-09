@@ -35,7 +35,7 @@ Working from home some of the time, or even entirely remotely can be amazing for
 
 This can come at a price however, as remote working undoubtedly makes communication more difficult, and without the correct processes in place, can cause problems. As an engineer who's worked in remote environments before, I've experienced these problems first hand, including a lack of communication across the team, and social isolation.
 
-Through using asynchronous communication methods, and promoting a healthy culture of asynchronously at your company, a lot of these problems can be mitigated. Concepts include:
+Through using asynchronous communication methods, and promoting the correct culture at your company, a lot of these problems can be mitigated. Concepts include:
 
 - Software: Correct usage of project management software such as [Jira](https://www.atlassian.com/software/jira){:target="_blank"} or design tools such as [Zeplin](https://zeplin.io){:target="_blank"} can update team members on progress automatically.
 - Documentation: Have a set of high-level cultural guidelines your team or company can use to unify their behaviour and use as a reference for how to communicate internally.
@@ -56,7 +56,7 @@ Instead, your code should be self-documenting. In other words, It should be easy
 - Don't do [unnecessary refactors](https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming){:target="_blank"}), a working solution is better than no solution
 - But also, [don't repeat yourself](https://en.wikipedia.org/wiki/Don%27t_repeat_yourself){:target="_blank"}, and refactor if something obviously needs a new level of abstraction
 - Your code should not require comments unless it's doing something crazy that warrants further explanation 
-- [Linting](https://github.com/realm/SwiftLint){:target="_blank"} can ensure all members of a team are unified on a coding style, enforcing certain coding standards and making code easier to read. Bear in mind some there will inevitably be disagreements on which linting rules to use within a project!
+- [Linting](https://github.com/realm/SwiftLint){:target="_blank"} can ensure all members of a team are unified on a coding style, enforcing certain coding standards and making code easier to read. Bear in mind, there will inevitably be disagreements on which linting rules to use within a project!
 
 ## High-Level Documentation
 

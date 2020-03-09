@@ -1,4 +1,3 @@
-
 ---
 layout: post
 title:  "My Top 15 Software Engineering Principles Part 2: CREATE A NEW TITLE"

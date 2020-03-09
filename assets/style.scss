@@ -9,9 +9,9 @@
 @import "variables";
 // Syntax highlighting @import is at the bottom of this file
 
-/**************/
-/* CUSTOM     */
-/**************/
+/**********/
+/* CUSTOM */
+/**********/
 
 .contact-input, .contact-textarea {
   width: 100%;
@@ -92,7 +92,10 @@ figcaption {
   }
 }
 
-
+.selected {
+  opacity: 0.75;
+  border-bottom: 1.5px solid #939aa1;
+}
 
 /**************/
 /* BASE RULES */
@@ -539,11 +542,6 @@ body:after {
       position: absolute;
       left: 0;
       content: '';
-}
-
-#main h1 {
-  line-height: 1;
-  margin-bottom: 1.5em
 }
 
 .post h1 {

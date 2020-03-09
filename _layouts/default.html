@@ -30,11 +30,11 @@
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Recent</a>
-            <a href="{{ site.baseurl }}/categories">Categories</a>
-            <a href="{{ site.baseurl }}/search">Search</a>
-            <a href="{{ site.baseurl }}/about">About</a>
-            <a href="{{ site.baseurl }}/contact">Contact</a>
+            <a class="{% unless page.title %}selected{% endunless %}" href="{{ site.baseurl }}/">Recent</a>
+            <a class="{% if page.title == 'Categories' %}selected{% endif %}" href="{{ site.baseurl }}/categories">Categories</a>
+            <a class="{% if page.title == 'Search' %}selected{% endif %}" href="{{ site.baseurl }}/search">Search</a>
+            <a class="{% if page.title == 'About' %}selected{% endif %}" href="{{ site.baseurl }}/about">About</a>
+            <a class="{% if page.title == 'Contact' %}selected{% endif %}" href="{{ site.baseurl }}/contact">Contact</a>
           </nav>
         </header>
       </div>

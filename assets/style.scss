@@ -13,34 +13,40 @@
 /* CUSTOM */
 /**********/
 
-.contact-input, .contact-textarea {
-  width: 100%;
-  padding: 12px 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-size: 18px;
-}
+.contact-form {
+  p {
+    margin-top: 30px;
+  }
 
-.contact-textarea {
-  height: 12em;
-}
+  input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 18px;
+  }
 
-.contact-label {
-  font-weight: bold;
-  line-height: 50px
-}
+  textarea {
+    height: 12em;
+  }
 
-.contact-submit {
-  width: 100px;
-  height: 50px;
-  border-radius: 4px;
-  font-size: 18px;
-  margin-top: 30px;
-  font-weight: bold;
-  border: 1px solid #ccc;
-  background: #ddd;
+  label {
+    font-weight: bold;
+    line-height: 50px
+  }
+
+  button {
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    font-size: 18px;
+    margin-top: 30px;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    background: #ddd;
+  }
 }
 
 .highlighter-rouge {
@@ -97,6 +103,10 @@ figcaption {
   border-bottom: 1.5px solid #939aa1;
 }
 
+.scroll-to-top {
+  float: right;
+}
+
 /**************/
 /* BASE RULES */
 /**************/
@@ -128,6 +138,7 @@ body {
   max-width: 820px;
   padding: 0 10px;
   width: 100%;
+  overflow: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -138,7 +149,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
-  /*text-align: center;*/
 
   @include mobile {
     line-height: 1.4;
@@ -162,6 +172,7 @@ h1 {
 
 h2 {
   font-size: 24px;
+  margin-top: 30px;
 }
 
 h3 {
@@ -219,7 +230,7 @@ table tr td :last-child {
 #search-input {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 40px 0;
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -271,10 +282,6 @@ img {
 //
 // .masthead
 //
-
-.wrapper-masthead {
-  margin-bottom: 25px;
-}
 
 .masthead {
   padding: 20px 0;
@@ -335,6 +342,7 @@ img {
   margin: -5px 0 0 0;
   color: $gray;
   font-size: 16px;
+  letter-spacing: 0.5px;
 
   @include mobile {
     margin: 3px 0;

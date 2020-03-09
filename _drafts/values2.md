@@ -5,21 +5,27 @@ categories: [Foo, Bar]
 excerpt_separator: <!--more-->
 ---
 
+This post is the second in a three-part article discussing the core principles I follow when designing, developing and deploying applications for the iOS platform. In the first part of the article, I outlined some low-level concepts used to increase app stability and communication on a more technical level. In this next part, we are travelling up one level of abstraction, so to speak. The following are ideas that can be used on a team or company level to improve overall communication and engineer efficiency across the board.
 
-Agile Methedologies
+If you haven't already taken the time to read the first part of this article, it's not entirely necessary, however if you'd like some more context on my working style, it might be worth reading (LINK)
 
-Agile is a methedology for software development that encompases a series of core principles to create high-quality sofware and deliver value to project stakeholders faster. There are two main application "frameworks" that aim to formalise Agile methodologies into a process, called Kanban and Scrum.
+Without further ado, here are my mid-level principles:
 
-These are mostly the same, however I believe the key difference is in the way software is delivered. Kanban is on a "continous" process, and relesaes are made when it's determined that vaue has been added to the product.
+## Agile Software Development Methodologies
 
-Scrum on the other hand, is split into time-blocked sprints to allow work on the product, after which software releases are deployed regardless of how much value has been added.
+Agile is a methodology for software development encompassing a series of core principles, utilised to create high-quality software and deliver value to project stakeholders faster than otherwise possible. There are two main "frameworks" which aim to formalise Agile Software Development into a structured template, called Kanban and Scrum. These two frameworks are mostly the same, however I believe the key difference is in the way software is delivered.
 
-I tend to prefer Scrum as an Agile process framework, as I find it suits mobile application development far better. There is always a certain overhead to deploying an iOS app, with TestFlight, iTunes connect metadata and Apple review times. It's important to factor this time when planning work-loads at the beginning of a sprint, and Scrum allows this. 2 weeks is a good length of time to add value to an application, and perform the release process. Any longer and you comprimise ont he amount of feedback you get from having your app in the open. Any shorter, and you will find yourself spending all your time dealing with deployment rather than adding concrete value to the product.
+Kanban is on a "continuous" basis, and releases are deployed simply when it's determined that value has been added to the product. Scrum on the other hand, is split into time-blocked sprints, giving more time to deliver features, after which software releases are deployed regardless of what is included at that time.
 
-It's important to note that both Kanban and Scrum are simply templates for a team to adapt and use. Like anything in Software Engineering, it's important to know why frameworks, tools and products exist and undertsand the problem they are trying to solve - only then can you use these tools to their full porential.
+I tend to prefer Scrum as an Agile process over Kanban, as I find it suits mobile application development far better. With TestFlight, iTunes Connect and the Apple review process, There is always a certain overhead when deploying an iOS app, and it's important to factor this time when planning work-loads at the beginning of a sprint.
 
+Scrum simply facilitates this better - 2 weeks is a decent length of time to add some value to an application, and perform the release process. Any longer, and you compromise on the amount of data and crash reports you can collect from having your new release in the hands of users. Any shorter, and you will find yourself spending all your time dealing with deployment rather than adding concrete value to the product itself.
 
-Asyncronous communication
+It's important to note that both Kanban and Scrum are simply templates for a team to adapt and use. Like anything in Software Engineering, it's important to know why frameworks, tools and products exist and understand the problem they are trying to solve - only then can you use these tools to their full potential.
+
+// CONTINUE HERE
+
+## Asynchronous Communication Standards
 
 Hiring for technology roles is hard, and companies are now looking futher afield to recruit talent, and having employees that work 100% remotely. Many companies are also allowing their employees to work from home 2-3 days a week at home.
 
@@ -32,7 +38,7 @@ This also has the advantage of increasing knowldge transfer between employees, a
 All in all, remote work can be hard, but taking an asyncronous-frist approach can really help in mititage potential misscommunications or fidelity loss.
 
 
-Code Health
+## Coding Standards & Linting
 
 The technology industry moves quickly, and iOS is no exception. Every year there are new frameworks released, Swift sytax is introduced and old API calls are deprecated. Coupled with changing business requirements,this means your codebase will never be static, and any low-level documentation you choose to write for a project will quickly become outdated - and outdated documentaton is even worse than no documentation!
 
@@ -42,7 +48,7 @@ Linting [LINK] can also be used to ensure all members of a team are unified on a
 
 https://en.wikipedia.org/wiki/Rule_of_three_(computer_programming)
 
-Documentation
+## High-Level Documentation
 
 One type of documentation I truly believe is worth writing is high-level cultural guidelines. It's important as a team to ahve a shared understanding of your approach to problems and communication methods. It's almost like an informal contract, that everyone can refer to in case of ambiguity or conflict.
 
@@ -50,7 +56,7 @@ Note this type of documentaiton is not written by solely the team leader, but is
 
 Another style of documentation worth writing are technical refernece sheets for projects, and short tutorials on how to get started and perform actions. An example of this could be a list of dependencies, tools and online platforms your team uses, and a short explaination for each (it's often easy for this information to be lost). Another example is a "getting started" document or "how to deploy".
 
-Pair Programming & Mentorship
+## Pair Programming & Code Reviews
 
 Software engineering is about much more than just coding, it's important to have a culture of disucssion where everyone can have their voice heard, lessons can be shared and conflicts can be resolved.
 

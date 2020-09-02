@@ -78,6 +78,22 @@ permalink: /cv/
 </div>
 </div>
 
+<!-- DH -->
+<div class="activity" markdown="1">
+<div class="details">
+<h3>Delivery Hero</h3>
+<h4>&nbsp;• Senior iOS Engineer</h4>
+<h5>Berlin, Germany • June 2020 - Present</h5>
+</div>
+---
+
+Delivery Hero (DH) is a food delivery and logistics company operating in 42 countries, with over 500,000 restaurants globally, with over 660m orders made last year. I work in the Financial Technologies (FinTech) department of DH, where I'm responsible for the development of the iOS Consumer Wallet framework, enabling users to quickly get refunded for orders and store credit for later use. While at DH I have:
+- Introduced unit-testing to the Wallet framework, achieving ~60% code coverage and improved app stability.
+- Overhauled test-automation scripting using Google's Earl Gray UI testing framework.
+- Updated locale handling to support country-specific images and assets, enabling the wallet to launch in three new countries.
+- Communicated estimates, technical specifications and limitations with scrum masters and PM's.
+- Held architectural discussions regarding the future of the wallet framework, and it's dependencies.
+
 <!-- HIBOOKS -->
 <div class="activity" markdown="1">
 <div class="details">
@@ -143,24 +159,6 @@ Depop is a community-driven marketplace with over 8 million registered users, an
 
 - On-boarded and trained junior team members, including pair programming and white-boarding sessions.
 
-</div>
-
-<!-- COCOON -->
-<div class="activity" markdown="1">
-<div class="details">
-<h3>Cocoon</h3>
-<h4>&nbsp;• iOS Engineer</h4>
-<h5>Leeds, UK • February 2016 - July 2017</h5>
-</div>
-</div>
-
-<!-- TSM -->
-<div class="activity" markdown="1">
-<div class="details">
-<h3>TopScreenMedia</h3>
-<h4>&nbsp;• iOS Engineer</h4>
-<h5>Leeds, UK • May 2014 - Feb 2016</h5>
-</div>
 </div>
 
 <!-- UNI -->

@@ -42,7 +42,7 @@ permalink: /cv/
 
 <!-- BIO -->
 <p class="bio">
- An accomplished engineer, with over 5 years commercial experience building and scaling iOS applications in a team environment. As a Swift user from day zero, I understand SOLID principles within the iOS ecosystem, and how test-driven development, intelligent system architecture, and agile-methodologies can mitigate bugs, improve code quality and make your app a success.
+ An accomplished engineer, with over five years experience building and scaling iOS applications in both start-up and corporate environments. As a Swift user since it's inception, I understand SOLID principles within iOS, and how test-driven development, smart architecture design, and agile methodologies can mitigate bugs, improve code quality and make your app a success.
 </p>
 
 <!-- SKILLS  -->
@@ -52,17 +52,17 @@ permalink: /cv/
 - Effective unit-testing & behaviour-driven software development
 - System architecture design & UI patterns: MVC, MVVM, VIPER etc.
 - User-interface development with UIKit, CoreAnimation & SwiftUI
-- Agile development practices, team management & training
-- Continuous integration & deployment using TestFlight
-- Reactive programming paradigms with RxSwift & Combine
+- Agile development practices, team management & mentorship
+- Continuous integration and deployment with Fastlane & Testflight
+- Media frameworks including AVFoundation, CoreAudio & OpenAL
 </div>
 
 <div class="section" markdown="1">
 **Languages**
 - Swift (5y)
 - Obj-C (8y)
+- RxSwift
 - Bash & Zsh
-- Ruby
 - JavaScript
 - Assembly
 </div>
@@ -71,7 +71,7 @@ permalink: /cv/
 **Favourite Tools**
 - Xcode & Instruments
 - Git & Fastlane
-- Cocoapods & Swift PM
+- Cocoapods & Carthage
 - iTerm & Sublime Text
 - LLDB & Hopper decompiler
 - Zeplin & Sketch
@@ -88,11 +88,11 @@ permalink: /cv/
 ---
 
 Delivery Hero (DH) is a food delivery and logistics company operating in 42 countries, with over 500,000 restaurants globally, with over 660m orders made last year. I work in the Financial Technologies (FinTech) department of DH, where I'm responsible for the development of the iOS Consumer Wallet framework, enabling users to quickly get refunded for orders and store credit for later use. While at DH I have:
-- Introduced unit-testing to the Wallet framework, achieving ~60% code coverage and improved app stability.
+- Introduced unit-testing to the Wallet framework, achieving ~60% code coverage and improving application stability.
 - Overhauled test-automation scripting using Google's Earl Gray UI testing framework.
-- Updated locale handling to support country-specific images and assets, enabling the wallet to launch in three new countries.
+- Updated locale handling to support country-specific images and assets, enabling the Wallet to launch in three new countries.
 - Communicated estimates, technical specifications and limitations with scrum masters and PM's.
-- Held architectural discussions regarding the future of the wallet framework, and it's dependencies.
+- Held architectural discussions regarding the future of the Wallet framework, and it's dependencies.
 
 <!-- HIBOOKS -->
 <div class="activity" markdown="1">

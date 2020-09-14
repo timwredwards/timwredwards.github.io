@@ -18,23 +18,23 @@ permalink: /cv/
 
 <div class="titles">
 <a href="https://www.timedwards.blog" target="_blank">
-<h1>Tim Edwards</h1>
+<h1>Timothy Edwards</h1>
 </a>
-<h2>iOS Software Engineer</h2>
+<h4>iOS Software Engineer</h4>
 </div>
 
 <div class="contact">
 <a class="website" href="https://www.timedwards.blog" target="_blank">
-	<img src="/images/website.svg">
 	<p>timedwards.blog</p>
+    <img src="/images/website.svg">
 </a>
 <a class="email" href="https://www.timedwards.blog/contact" target="_blank">
-	<img src="/images/email.svg">
 	<p>@gmail.com</p>
+    <img src="/images/email.svg">
 </a>
 <a class="github" href="https://github.com/timwredwards" target="_blank">
-	<img src="/images/github.svg">
 	<p>github.com/timwredwards</p>
+    <img src="/images/github.svg">
 </a>
 </div>
 
@@ -42,39 +42,59 @@ permalink: /cv/
 
 <!-- BIO -->
 <p class="bio">
- An accomplished engineer, with over five years experience building and scaling iOS applications in both start-up and corporate environments. As a Swift user since it's inception, I understand SOLID principles within iOS, and how test-driven development, smart architecture design, and agile methodologies can mitigate bugs, improve code quality and make your app a success.
+ An accomplished engineer, with over six years experience building and scaling iOS applications in both start-up and corporate environments. As a Swift user since it's inception, I understand SOLID principles within iOS, and how test-driven development, smart architecture design, and agile methodologies can mitigate bugs, improve code quality and make your app a success.
 </p>
 
 <!-- SKILLS  -->
 <div class="skills">
 <div class="section" markdown="1">
 **Skills & Specialties**
-- Effective unit-testing & behaviour-driven software development
-- System architecture design & UI patterns: MVC, MVVM, VIPER etc.
-- User-interface development with UIKit, CoreAnimation & SwiftUI
-- Agile development practices, team management & mentorship
-- Continuous integration and deployment with Fastlane & Testflight
-- Media frameworks including AVFoundation, CoreAudio & OpenAL
+
+• Effective unit-testing & behaviour-driven software development
+
+• System architecture design & UI patterns: MVC, MVVM, VIPER etc.
+
+• User-interface development with UIKit, CoreAnimation & SwiftUI
+
+• Agile development practices, team management & mentorship
+
+• Continuous integration and deployment with Fastlane & Testflight
+
+• Media frameworks including AVFoundation, CoreAudio & OpenAL
 </div>
 
 <div class="section" markdown="1">
 **Languages**
-- Swift (5y)
-- Obj-C (8y)
-- RxSwift
-- Bash & Zsh
-- JavaScript
-- Assembly
+
+• Swift (5y)
+
+• Obj-C (8y)
+
+• RxSwift
+
+• Bash & Zsh
+
+• JavaScript
+
+• Assembly
+
 </div>
 
 <div class="section" markdown="1">
 **Favourite Tools**
-- Xcode & Instruments
-- Git & Fastlane
-- Cocoapods & Carthage
-- iTerm & Sublime Text
-- LLDB & Hopper decompiler
-- Zeplin & Sketch
+
+• Xcode & Instruments
+
+• Git & Fastlane
+
+• Cocoapods & Carthage
+
+• iTerm & Sublime Text
+
+• LLDB & Hopper decompiler
+
+• Zeplin & Sketch
+
 </div>
 </div>
 
@@ -82,12 +102,13 @@ permalink: /cv/
 <div class="activity" markdown="1">
 <div class="details">
 <h3>Delivery Hero</h3>
-<h4>&nbsp;• Senior iOS Engineer</h4>
+<div class="tagline">"Always delivering an amazing experience"</div>
+<h4>Senior iOS Engineer</h4>
 <h5>Berlin, Germany • June 2020 - Present</h5>
 </div>
 ---
 
-Delivery Hero (DH) is a food delivery and logistics company operating in 42 countries, with over 500,000 restaurants globally, with over 660m orders made last year. I work in the Financial Technologies (FinTech) department of DH, where I'm responsible for the development of the iOS Consumer Wallet framework, enabling users to quickly get refunded for orders and store credit for later use. While at DH I have:
+Delivery Hero (DH) is a food delivery company operating in 42 countries, with over 500,000 restaurants globally, with over 660m orders made last year. I work in the Financial Technologies (FinTech) department of DH, where I'm responsible for the development of the iOS Wallet framework, enabling users to quickly get refunded for orders and store credit for later use. While at DH I have:
 - Introduced unit-testing to the Wallet framework, achieving ~60% code coverage and improving application stability.
 - Overhauled test-automation scripting using Google's Earl Gray UI testing framework.
 - Updated locale handling to support country-specific images and assets, enabling the Wallet to launch in three new countries.
@@ -98,7 +119,8 @@ Delivery Hero (DH) is a food delivery and logistics company operating in 42 coun
 <div class="activity" markdown="1">
 <div class="details">
 <h3>Hibooks</h3>
-<h4>&nbsp;• Senior iOS Engineer</h4>
+<div class="tagline">"The club for audiobook lovers"</div>
+<h4>Senior iOS Engineer</h4>
 <h5>Berlin, Germany • June 2019 - December 2019</h5>
 </div>
 ---
@@ -123,7 +145,8 @@ Hibooks is an audiobook service provider. Their iOS application includes an offl
 <div class="activity" markdown="1">
 <div class="details">
 <h3>Todoist</h3>
-<h4>&nbsp;• iOS Contractor</h4>
+<div class="tagline">"Organise life, then go enjoy it"</div>
+<h4>iOS Contractor</h4>
 <h5>Remote • October 2018 - February 2019</h5>
 </div>
 ---
@@ -138,11 +161,14 @@ Todoist is a task manager and collaboration tool for mobile and web platforms, w
 
 </div>
 
+<div class="pagebreak"> </div>
+
 <!-- DEPOP -->
 <div class="activity" markdown="1">
 <div class="details">
 <h3>Depop</h3>
-<h4>&nbsp;• Senior iOS Engineer</h4>
+<div class="tagline">"The creative community's mobile marketplace"</div>
+<h4>Senior iOS Engineer</h4>
 <h5>London, UK • July 2017 - February 2018</h5>
 </div>
 ---
@@ -161,11 +187,44 @@ Depop is a community-driven marketplace with over 8 million registered users, an
 
 </div>
 
-<!-- UNI -->
+<!-- COCOON -->
 <div class="activity" markdown="1">
 <div class="details">
+<h3>Cocoon</h3>
+<div class="tagline">"Home security without the hassle"</div>
+<h4>iOS Engineer</h4>
+<h5>Leeds, UK • February 2016 - July 2017</h5>
+</div>
+</div>
+---
+
+Cocoon was the producer of smart-home security hardware, with accompanying mobile applications to alert and inform the user of any detected activity. I was one of two members of the iOS team, responsible for the specification, development, deployment and maintenance of all iOS features. During my time at Cocoon I:
+
+- Retroactively implemented unit-testing, facilitating the safe introduction of new features including Core Location services, remote logging, APNS, and the beginning of a refactor from the legacy Objective-C codebase to Swift.
+
+- Integrated an HTTP live video streaming client using libVLC, and was applauded for its quick performance.
+
+- Modernised the continuous integration system to utilise Fastlane and Travis CI, for auto-deployment to Testflight.
+
+<!-- TSM -->
+<div class="activity" markdown="1">
+<div class="details">
+<h3>TopScreenMedia</h3>
+<div class="tagline">"Creative media solutions for advertisers"</div>
+<h4>Mobile Software Engineer</h4>
+<h5>Leeds, UK • May 2014 - Feb 2016</h5>
+</div>
+</div>
+---
+
+TopScreenMedia (TSM) is a digital marketing agency, where I developed, deployed and maintained various prototype projects, working alongside UX designers and backend engineers. Apps were written using Objective-C, using frameworks including Core Bluetooth, APNS and the Google Maps SDK.
+
+
+<!-- UNI -->
+<div class="activity uni" markdown="1">
+<div class="details">
 <h3>University of York</h3>
-<h4>&nbsp;• Music Technology BSc (Hons)</h4>
 <h5>York, UK • September 2011 - June 2014</h5>
+<h4>Music Technology BSc (Hons), Department of Electronic Engineering</h4>
 </div>
 </div>

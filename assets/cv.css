@@ -21,13 +21,39 @@ ul {
 	padding-left: 1em;
 }
 
-.page h1 {
+h1,h2,h3,h4,h5,.tagline, strong {
+	letter-spacing: 0.3px;
+}
+
+h1 {
 	margin: 0 !important;
+	font-size: 1.5em;
+	font-weight: 500;
+	margin: 0 !important;
+	line-height: 1.2 !important;
+}
+
+
+h4 {
+	font-size: 0.8em;
+	font-weight: 500;
 }
 
 @media (prefers-color-scheme: light) {
 	p, li {
-		color: black;
+		color: black !important;
+	}
+	hr {
+		background: black !important;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	* {
+		color: white !important;
+	}
+	hr {
+		background: white !important;
 	}
 }
 
@@ -72,32 +98,28 @@ ul {
 	padding-left: 10px;
 }
 
-.header .titles h1 {
-	font-size: 1.5em;
-	font-weight: 300;
-	margin: 0 !important;
-	line-height: 1.2 !important;
-}
-
-.header .titles h2 {
-	font-size: 0.8em;
+.header .titles h4 {
 	margin: 0;
-	font-weight: 300;
-	letter-spacing: 0.3px;
 }
 
 .header .contact {
 	margin: 0;
+	margin-bottom: 5px;
 }
 
 .header .contact a {
 	display: flex;
 	align-items: center;
-	margin-top: 5px;
+	margin-top: 4px;
+	font-weight: 500;
+	letter-spacing: 0.3px;
 }
 
-.header .contact a * {
+.header .contact a p {
 	margin: 0;
+	flex-grow: 1;
+	text-align: right;
+	margin-right: 5px;
 }
 
 .header .contact img {
@@ -121,7 +143,7 @@ ul {
 /* bio */
 
 .bio {
-	margin: 8px 0 8px 0;
+	margin: 20px 0 20px 0;
 }
 
 /* skills */
@@ -135,17 +157,17 @@ ul {
 	padding: 0 0 0 0.1em;
 }
 
-.skills .section:first-of-type li:before {
-	content: '✓';
-	margin-right: 4px;
-}
-
 .skills .section {
 	flex-grow: 1;
+	margin-bottom: 4px;
 }
 
 .skills .section * {
 	margin: 0;
+}
+
+.skills .section p {
+	margin-bottom: 1px;
 }
 
 /* activity */
@@ -158,28 +180,38 @@ ul {
 
 .activity .details * {
 	margin: 0;
+	width: 50%
 }
 
 .activity .details h3 {
-	margin-top: 15px;
+	font-weight: 600;
+	margin-top: 24px;
 	margin-bottom: 0;
 	line-height: 50%;
 }
 
-.activity .details h4 {
-	flex-grow: 1;
+.activity .details h5 {
+	font-size: 12px;
+	font-weight: 500;
+	text-align: right;
 }
 
-.activity .details h4, h5 {
-	font-size: 13px;
-	font-weight: normal;
-	letter-spacing: 0.3px;
+.uni .details h4 {
+	width: 100%;
 }
 
-.activity hr {
+.activity .details .tagline {
+	font-size: 12px;
+	font-style: italic;
+	text-align: right;
+}
+
+hr {
 	opacity: 0.4;
 	margin-top: 0;
-	margin-bottom: 5px;
+	margin-bottom: 4px;
+	border: none;
+	height: 1px;
 }
 
 .activity p {
@@ -200,6 +232,8 @@ ul {
 	.pdf-banner {
 		display: none;
 	}
+
+	.pagebreak { page-break-before: always; }
 
 	.header {
 		margin-top: 0px;
